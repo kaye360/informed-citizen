@@ -1,0 +1,23 @@
+
+
+/* 
+Site-wide configuration variables
+*/
+@import url('./global-config.css');
+
+
+/* 
+DOM element resets
+*/
+@import url('./global-reset.css');
+
+
+/* 
+Utility Classes
+*/
+@import url('./utils.css');
+
+/* 
+Fonts
+*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');

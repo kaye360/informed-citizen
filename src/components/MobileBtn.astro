@@ -1,0 +1,88 @@
+
+<>
+<button aria-label="Toggle Menu" class="mobile-menu-btn">
+  <svg class="nav-icon-open" width="34" height="25" viewBox="0 0 34 25" fill="none">
+
+      <line class="mobile-btn-line-1"
+        x1="2.5" y1="12.5" x2="31.5" y2="12.5" 
+        stroke="black" stroke-width="3" stroke-linecap="round"/>
+
+      <line  class="mobile-btn-line-2"
+        x1="2.5" y1="22.5" x2="31.5" y2="22.5" 
+        stroke="black" stroke-width="3" stroke-linecap="round"/>
+
+      <line class="mobile-btn-line-3"
+        x1="2.5" y1="2.5" x2="31.5" y2="2.5" 
+        stroke="black" stroke-width="3" stroke-linecap="round"/>
+
+  </svg>
+</button>
+</>
+
+<style>
+
+  button {
+    position: relative;
+    z-index : 600;
+    flex-shrink: 0;
+    order : 3;
+    display: inline-block;
+    height : 25px;
+    cursor : pointer;
+    transition: all 250ms;
+  }
+
+  @media screen and (min-width : 900px) {
+    button {
+      display : none;
+    }
+  }
+
+  line {
+    transform-origin: center;
+
+    transition: all 550ms ease-in-out;
+  }
+</style>
+
+
+
+
+<style is:global>
+
+  .mobile-menu-is-open line:nth-child(1) {
+    transform: rotate(225deg);
+  }
+
+  .mobile-menu-is-open line:nth-child(2) {
+    transform: rotate(-225deg) translate(0%, -40%);
+  }
+  
+  .mobile-menu-is-open line:nth-child(3) {
+    transform: rotate(90deg) translateX(200%);
+  }
+
+</style>
+
+
+
+<script type="module">
+
+  const btn = document.querySelector('.mobile-menu-btn')
+  const body = document.body
+  btn.addEventListener('click', () => {
+    if(body.classList.contains('mobile-menu-is-open')) {
+      // Close Menu
+      body.classList.add('mobile-menu-is-closing')
+      setTimeout( () => {
+        body.classList.remove('mobile-menu-is-open')
+        body.classList.remove('mobile-menu-is-closing')
+      }, 350)
+    } else {
+      // Open Menu
+      body.classList.add('mobile-menu-is-open')
+    }
+  })
+  
+  </script>
+  

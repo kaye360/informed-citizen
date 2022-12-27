@@ -1,0 +1,82 @@
+---
+import Sidebar from '../components/Sidebar.astro';
+import HomeLayout from '../layouts/HomeLayout.astro';
+import Hero from '../components/Hero.astro';
+import Logo from '../components/Logo.astro';
+---
+
+
+<HomeLayout title="Welcome to Astro.">
+
+	<div class="home-grid container">
+		<Hero />
+		<Sidebar />		
+	</div>
+
+
+	<div class="about container">
+		<h2>
+			About <Logo link={ false } />
+		</h2>
+
+		<div class="about-overlay">
+			<p>
+				There is  huge problem in the world today. We see it everywhere these days - especially on social media. Too many people today have strong opinions on politics without a basic understanding of various viewpoints.
+			</p>
+			
+			<p>
+				Welcome to informed/citizen, a comprehensive resource for learning about political ideologies and concepts. The goal of this website is to provide unbiased and objective information about these subjects, without any spin or partisan bias.
+			</p>
+			
+			<p>
+				I/C covers a wide range of topics, including the different types of government systems, the various ideologies that shape political thought and action, and the concepts and theories that underlie political discourse. 
+			</p>
+
+			<p>
+				We strive to present all of this information in a clear and concise manner, with the aim of helping our readers better understand the complexities of the political world. Whether you're a student, a political activist, or simply interested in learning more about politics, we hope that our website will provide you with the knowledge and tools you need to engage with the political world in a meaningful and informed way.
+			</p>
+
+			<p>
+				informed/citizen is not affiliated with any political organizations or lobby groups.
+			</p>
+		</div>
+	</div>
+	
+	
+	<div class="explore container">
+		Expore More
+	</div>
+
+
+	<div class="topics container">
+		Topics
+	</div>
+
+</HomeLayout>
+
+<style>
+
+.home-grid {
+	display :grid;
+	gap : 3rem;
+}
+
+.about {
+	padding : var(--spacing-x-default);
+	background-image: url(/assets/img/about.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.about h2 {
+	display : flex;
+	align-items: center;
+	gap : 1rem;
+}
+
+.about-overlay {
+	padding: var(--spacing-x-default);
+	background-color: hsla(0, 0%, 100%, 0.5);
+}
+
+</style>

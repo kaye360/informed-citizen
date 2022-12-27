@@ -1,0 +1,34 @@
+---
+const { link = true, color = '#222' } = Astro.props
+---
+
+<>
+{
+  link 
+    ? <a href="/" class="logo-link">
+        <div class="logo">informed <img src="/assets/img/logo-line.svg" /> citizen</div>
+      </a>     
+    : <div class="logo">
+        informed <img src="/assets/img/logo-line.svg" /> citizen
+      </div>
+}
+</>
+
+<style define:vars={{ color }}>
+
+.logo-link {
+  color : var(--color);
+  font-family: var(--font-heading);
+  font-size: var(--font-size-3);
+}
+
+.logo-link:hover {
+  color : hsl( var(--clr-primary-4) );
+}
+
+.logo {
+  display : flex;
+  align-items: center;
+}
+
+</style>

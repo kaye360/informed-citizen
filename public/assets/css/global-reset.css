@@ -1,0 +1,91 @@
+*, *::before, *::after {
+  margin : 0;
+  padding : 0;
+  box-sizing: border-box;
+  font: inherit;
+  vertical-align: baseline;
+  
+  /* outline : 1px solid red; */
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 100px;
+}
+
+body {
+  min-height : 100vh;
+  background-color: #fff;
+  font-weight: 300;
+  font-size: var(--font-size-1);
+  font-family: var(--font-default);
+  line-height : calc( var(--font-size-1) * 1.5 );
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+img, picture, video, canvas, svg { 
+  max-width: 100%;
+}
+
+ul {
+  padding-left : 2rem;
+}
+
+p {
+  margin-block: 1.7rem;
+  line-height: 1.7rem;
+}
+
+button {
+  border : 0;
+  outline : 0;
+  background: none;
+  cursor : pointer;
+  font-weight : 500;
+  color : inherit;
+}
+
+a {
+  text-decoration: none;
+  color : hsl( var(--default-link-clr) );
+}
+
+a:hover, a:focus {
+  color : hsl( var(--default-link-hover-clr) );
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family : var(--font-heading);
+}
+
+h1 {
+  font-weight: 500;
+  font-size: var(--font-size-4);
+  line-height: calc( var(--font-size-4) * 1.5);
+  margin-block : var(--font-size-4)
+}
+
+h2 {
+  font-weight: 500;
+  font-size: var(--font-size-3);
+  line-height: calc( var(--font-size-3) * 1.5);
+  margin-block: var(--font-size-3);
+}
+
+h3 {
+  font-weight: 500;
+  font-size: var(--font-size-2);
+  line-height: calc( var(--font-size-2) * 1.5);
+  margin-block: var(--font-size-2);
+}

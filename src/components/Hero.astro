@@ -1,0 +1,91 @@
+---
+import Logo from "./Logo.astro";
+import Card from "./Card.astro";
+import MobileBtn from "./MobileBtn.astro";
+---
+
+<div class="hero">
+
+  <div class="logo-wrapper">
+    <Logo />
+    <MobileBtn />
+  </div>
+
+  <div class="hero-intro">
+    <h1>
+      Unlock your <span>next level</span> of political knowledge
+    </h1>
+
+    <p>
+      Too many people today have strong opinions on politics without a basic understanding of various viewpoints. Learn the essentials of political ideologies and concepts - without bias or spin.
+    </p>
+  </div>
+
+  <div class="hero-grid">
+
+    <Card
+      title="Liberalism"
+      content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vero est consequatur atque praesentium harum architecto ipsam veritatis totam. Tempore inventore et, ipsam hic eos tenetur sequi placeat necessitatibus! Dolore!"
+    />
+
+    <Card
+      title="Liberalism"
+      content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vero est consequatur atque praesentium harum architecto ipsam veritatis totam. Tempore inventore et, ipsam hic eos tenetur sequi placeat necessitatibus! Dolore!"
+    />
+
+    <Card
+      title="Liberalism"
+      content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vero est consequatur atque praesentium harum architecto ipsam veritatis totam. Tempore inventore et, ipsam hic eos tenetur sequi placeat necessitatibus! Dolore!"
+    />
+
+    <Card
+      title="Liberalism"
+      content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vero est consequatur atque praesentium harum architecto ipsam veritatis totam. Tempore inventore et, ipsam hic eos tenetur sequi placeat necessitatibus! Dolore!"
+    />
+
+    <Card
+      title="Liberalism"
+      content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vero est consequatur atque praesentium harum architecto ipsam veritatis totam. Tempore inventore et, ipsam hic eos tenetur sequi placeat necessitatibus! Dolore!"
+    />
+
+    <Card
+      title="Liberalism"
+      content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vero est consequatur atque praesentium harum architecto ipsam veritatis totam. Tempore inventore et, ipsam hic eos tenetur sequi placeat necessitatibus! Dolore!"
+    />
+
+  </div>
+
+</div>
+
+<style>
+
+.logo-wrapper {
+  display : flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.hero-intro {
+  padding : 1rem 2vw;
+  background-image: url('/assets/img/hero.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-intro h1 span {
+  color : hsl( var(--clr-primary-4) );
+}
+
+.hero-intro p {
+  font-size: var(--font-size-2);
+}
+
+.hero-grid {
+  transform: translateY(-1.3rem);
+  margin-inline : calc( var(--spacing-x-default) + 5px);
+  display : grid;
+  gap : 1.3rem;
+}
+
+</style>
