@@ -9,7 +9,7 @@ let articleTags = tags.split(',').map( tag => {
 
 <div class="card">
   
-  <h2>{title}</h2>
+  <h3>{title}</h3>
 
   {
   tags &&
@@ -47,16 +47,16 @@ let articleTags = tags.split(',').map( tag => {
   display : none;
 }
 
-.card h2 {
+.card h3 {
   position: relative;
 }
 
-.card h2::before {
+.card h3::before {
   content: '';
   position : absolute;
   bottom: -10px;
   left : 0;
-  width : 100px;
+  width :75px;
   border-bottom : 1px solid #999;
 }
 

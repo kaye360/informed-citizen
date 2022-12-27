@@ -1,31 +1,94 @@
 ---
-import Logo from "./Logo.astro";
-import MobileBtn from "./MobileBtn.astro";
 const { activePage, } = Astro.props;
 
 
 ---
 
 
+<section class="sidebar">
 
-<nav>
+  <nav>
+  
+    <ul class="main-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Topics</a></li>
+      <li><a href="#">Popular</a></li>
+    </ul>
+  
 
-  <ul class="main-nav">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Topics</a></li>
-    <li><a href="#">Popular</a></li>
-  </ul><!-- .main-nav -->
+    <ul class="topics-nav">
+      <li><a href="#">#liberal</a></li>
+      <li><a href="#">#conservative</a></li>
+      <li><a href="#">#critical-race-theory</a></li>
+      <li><a href="#">#maga</a></li>
+      <li><a href="#">#liberal</a></li>
+      <li><a href="#">#conservative</a></li>
+      <li><a href="#">#critical-race-theory</a></li>
+      <li><a href="#">#maga</a></li>
+      <li><a href="#">#liberal</a></li>
+      <li><a href="#">#conservative</a></li>
+      <li><a href="#">#critical-race-theory</a></li>
+      <li><a href="#">#maga</a></li>
+    </ul>
 
-</nav>
+  </nav>
 
+</section>
 
-      
 
 <style>
 
-nav {
+.sidebar nav {
+  height : 100%;
+  display : grid;
+  place-items: center;
+  border : 1px solid red;
+}
+
+.main-nav {
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  gap : 2rem;
+  font-size : var(--font-size-3)
+}
+
+.topics-nav {
+  display : flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  font-size : var(--font-size-2)
+}
+
+.topics-nav li {
+  width : fit-content
+}
+
+a {
+  color : #ccc;
+}
+
+</style>
+      
+
+
+<style is:global>
+
+.sidebar {
   display : none;
+
+  position: fixed;
+  inset : 0;
+  z-index : 500;
+
+  background-color: #222;
 }  
+
+.mobile-menu-is-open .sidebar {
+  display : block;
+}
 
 </style>
 

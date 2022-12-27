@@ -1,7 +1,7 @@
 
 <>
 <button aria-label="Toggle Menu" class="mobile-menu-btn">
-  <svg class="nav-icon-open" width="34" height="25" viewBox="0 0 34 25" fill="none">
+  <svg class="mobile-btn-svg" width="34" height="25" viewBox="0 0 34 25" fill="none">
 
       <line class="mobile-btn-line-1"
         x1="2.5" y1="12.5" x2="31.5" y2="12.5" 
@@ -50,10 +50,14 @@
 
 <style is:global>
 
+  .mobile-menu-is-open line {
+    stroke : #fff;
+  }
+
   .mobile-menu-is-open line:nth-child(1) {
     transform: rotate(225deg);
   }
-
+  
   .mobile-menu-is-open line:nth-child(2) {
     transform: rotate(-225deg) translate(0%, -40%);
   }
