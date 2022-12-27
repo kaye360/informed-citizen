@@ -47,6 +47,19 @@ let articleTags = tags.split(',').map( tag => {
   display : none;
 }
 
+@media screen and (min-width : 850px) {
+  .card:nth-child(4) {
+    display : block;
+  }
+}
+
+@media screen and (min-width : 1200px) {
+  .card:nth-child(5),
+  .card:nth-child(6) {
+    display : block;
+  }
+}
+
 .card h3 {
   position: relative;
 }

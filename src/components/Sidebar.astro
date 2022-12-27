@@ -29,6 +29,7 @@ const { activePage, } = Astro.props;
       <li><a href="#">#conservative</a></li>
       <li><a href="#">#critical-race-theory</a></li>
       <li><a href="#">#maga</a></li>
+      <li><a href="#" class="more-topics-btn">More Topics</a></li>
     </ul>
 
   </nav>
@@ -37,44 +38,6 @@ const { activePage, } = Astro.props;
 
 
 <style>
-
-.sidebar nav {
-  height : 100%;
-  display : grid;
-  place-items: center;
-  border : 1px solid red;
-}
-
-.main-nav {
-  display : flex;
-  flex-direction: column;
-  align-items: center;
-  gap : 2rem;
-  font-size : var(--font-size-3)
-}
-
-.topics-nav {
-  display : flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  font-size : var(--font-size-2)
-}
-
-.topics-nav li {
-  width : fit-content
-}
-
-a {
-  color : #ccc;
-}
-
-</style>
-      
-
-
-<style is:global>
 
 .sidebar {
   display : none;
@@ -85,6 +48,89 @@ a {
 
   background-color: #222;
 }  
+
+@media screen and (min-width : 850px) {
+  .sidebar {
+    display : block;
+    position: static;
+    padding-top : 2rem;
+  }
+}
+
+.sidebar nav {
+  height : 100%;
+  display : grid;
+  place-items: center;
+}
+
+@media screen and (min-width : 850px) {
+  .sidebar nav {
+    align-items: start;
+    gap : 5rem;
+    padding-inline : 1.5rem;
+  }
+}
+
+.main-nav {
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  gap : 2rem;
+  font-size : var(--font-size-3);
+}
+
+@media screen and (min-width : 850px) {
+  .main-nav {
+    align-items: start;
+    width : 100%;
+    font-size : var(--font-size-2);
+  }
+}
+
+
+.topics-nav {
+  display : flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  font-size : var(--font-size-2);
+}
+
+.topics-nav li {
+  width : fit-content
+}
+
+@media screen and (min-width : 850px) {
+  .topics-nav {
+    width : 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    font-size : var(--font-size-1);
+  }
+
+  .topics-nav li {
+    width : 100%;
+  }
+}
+
+a {
+  color : #ccc;
+}
+
+.more-topics-btn {
+  display : inline-block;
+  padding : 0.3rem 1rem;
+  border : 1px solid #ccc;
+}
+
+</style>
+      
+
+
+<style is:global>
+
+
 
 .mobile-menu-is-open .sidebar {
   display : block;

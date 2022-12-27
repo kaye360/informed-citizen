@@ -33,6 +33,12 @@ ul {
   padding-left : 2rem;
 }
 
+nav ul {
+  list-style-type: none;
+  padding : 0;
+}
+
+
 p {
   margin-block: 1.7rem;
   line-height: 1.7rem;
@@ -56,9 +62,6 @@ a:hover, a:focus {
   color : hsl( var(--default-link-hover-clr) );
 }
 
-nav ul {
-  list-style-type: none;
-}
 
 table {
   border-collapse: collapse;
