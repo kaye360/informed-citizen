@@ -3,6 +3,7 @@ import Sidebar from '../components/Sidebar.astro';
 import HomeLayout from '../layouts/HomeLayout.astro';
 import Hero from '../components/Hero.astro';
 import Logo from '../components/Logo.astro';
+import Card from '../components/Card.astro';
 ---
 
 
@@ -43,12 +44,68 @@ import Logo from '../components/Logo.astro';
 	
 	
 	<div class="explore container">
-		Expore More
+		<h2>
+			Expore More
+		</h2>
+
+		<div class="explore-grid">
+
+			<Card 
+				title="Liberalism"
+				content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam hic molestias facilis. Excepturi error perspiciatis iusto fugit, maxime itaque id laudantium ipsum labore! Corrupti, molestiae non! Sint voluptatem aliquid rem."
+				tags="left-of-center, capitalism, liberalism"
+				link="#"
+			/>
+
+			<Card 
+				title="Liberalism"
+				content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam hic molestias facilis. Excepturi error perspiciatis iusto fugit, maxime itaque id laudantium ipsum labore! Corrupti, molestiae non! Sint voluptatem aliquid rem."
+				tags="left-of-center, capitalism, liberalism"
+				link="#"
+			/>
+
+			<Card 
+				title="Liberalism"
+				content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam hic molestias facilis. Excepturi error perspiciatis iusto fugit, maxime itaque id laudantium ipsum labore! Corrupti, molestiae non! Sint voluptatem aliquid rem."
+				tags="left-of-center, capitalism, liberalism"
+				link="#"
+			/>
+
+			<Card 
+				title="Liberalism"
+				content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam hic molestias facilis. Excepturi error perspiciatis iusto fugit, maxime itaque id laudantium ipsum labore! Corrupti, molestiae non! Sint voluptatem aliquid rem."
+				tags="left-of-center, capitalism, liberalism"
+				link="#"
+			/>
+
+			<Card 
+				title="Liberalism"
+				content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam hic molestias facilis. Excepturi error perspiciatis iusto fugit, maxime itaque id laudantium ipsum labore! Corrupti, molestiae non! Sint voluptatem aliquid rem."
+				tags="left-of-center, capitalism, liberalism"
+				link="#"
+			/>
+
+			<Card 
+				title="Liberalism"
+				content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam hic molestias facilis. Excepturi error perspiciatis iusto fugit, maxime itaque id laudantium ipsum labore! Corrupti, molestiae non! Sint voluptatem aliquid rem."
+				tags="left-of-center, capitalism, liberalism"
+				link="#"
+			/>
+			
+		</div>
 	</div>
 
 
 	<div class="topics container">
-		Topics
+		<h2 class="text-center">
+			Topics
+		</h2>
+
+		<p class="topics-tags">
+			#left-wing #right-wing #liberal #black-lives-matter #paleo-conservative #marxism #maga #critical-race-theory
+			#left-wing #right-wing #liberal #black-lives-matter #paleo-conservative #marxism #maga #critical-race-theory 
+			#left-wing #right-wing #liberal #black-lives-matter #paleo-conservative #marxism #maga #critical-race-theory   
+		</p>
 	</div>
 
 </HomeLayout>
@@ -76,6 +133,25 @@ import Logo from '../components/Logo.astro';
 .about-overlay {
 	padding: var(--spacing-x-default);
 	background-color: hsla(0, 0%, 100%, 0.5);
+}
+
+.explore {
+	padding : var(--spacing-x-default);
+}
+
+.explore-grid {
+	display : grid;
+	gap : 1.3rem;
+}
+
+.topics {
+	padding : var(--spacing-x-default);
+}
+
+.topics-tags {
+	text-align: center;
+	line-height: 2rem;
+	word-spacing: 2rem;
 }
 
 </style>

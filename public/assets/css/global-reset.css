@@ -16,7 +16,7 @@ html {
 body {
   min-height : 100vh;
   background-color: #fff;
-  font-weight: 300;
+  font-weight: 400;
   font-size: var(--font-size-1);
   font-family: var(--font-default);
   line-height : calc( var(--font-size-1) * 1.5 );

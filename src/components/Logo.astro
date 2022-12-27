@@ -1,5 +1,5 @@
 ---
-const { link = true, color = '#222' } = Astro.props
+const { link = true, textColor = "#222" } = Astro.props
 ---
 
 <>
@@ -14,21 +14,22 @@ const { link = true, color = '#222' } = Astro.props
 }
 </>
 
-<style define:vars={{ color }}>
+<style define:vars={{ textColor }}>
 
 .logo-link {
-  color : var(--color);
-  font-family: var(--font-heading);
-  font-size: var(--font-size-3);
+  color : var(--textColor);
 }
 
 .logo-link:hover {
-  color : hsl( var(--clr-primary-4) );
+  color : hsl( var(--clr-primary-5) );
 }
 
 .logo {
   display : flex;
   align-items: center;
+  color : var(--textColor);
+  font-family: var(--font-heading);
+  font-size: var(--font-size-3);
 }
 
 </style>
