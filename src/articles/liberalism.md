@@ -6,7 +6,7 @@ date: 2022-12-25
 author : admin
 tags : 
   - liberalism
-  - left-of-center
+  - center-left
   - capitalism
   - social-democracy
   - centrism

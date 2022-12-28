@@ -17,7 +17,7 @@ pages = pages.slice(0,9)
 		<Hero />
 	</section>
 
-	<section class="about container">
+	<section class="about">
 		<h2>
 			About <Logo link={ false } />
 		</h2>
@@ -108,14 +108,6 @@ pages = pages.slice(0,9)
 	background-repeat: no-repeat;
 }
 
-@media screen and (min-width : 850px) {
-	.about {
-		padding : 0;
-		background-size: 90%;
-		background-position: right -250% top 40%;
-	}
-}
-
 .about h2 {
 	display : flex;
 	align-items: center;
@@ -124,7 +116,9 @@ pages = pages.slice(0,9)
 
 .about-overlay {
 	padding: var(--spacing-x-default);
+	/* background-color: hsla(0, 0%, 100%, 0.5); */
 	background-color: hsla(0, 0%, 100%, 0.5);
+	border-radius: 8px;
 }
 
 @media screen and (min-width : 850px) {

@@ -4,7 +4,8 @@ import Logo from "../components/Logo.astro";
 import MobileBtn from "../components/MobileBtn.astro";
 import Sidebar from "../components/Sidebar.astro";
 import Footer from "../components/Footer.astro";
-const { title, tags, date, author } = Astro.props;
+import SocialShare from "../components/SocialShare.astro";
+const { title, tags = [], date, author, uri } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -22,7 +23,7 @@ const { title, tags, date, author } = Astro.props;
 		<Skip />
 
 
-		<main id="content">
+		<main class="container" id="content">
 
 			<Sidebar />
 
@@ -33,22 +34,32 @@ const { title, tags, date, author } = Astro.props;
 					<MobileBtn />
 				</div>
 	
-				<article class="mt1">
+				<article class="mt3">
 
 
 					<header class="mb3">
 						
-						<div class="page-info">
-							Posted on {date} by {author}
-						</div>
+						{
+						date && author &&
+							<div class="page-info">
+								Posted on {date} by {author}
+							</div>
+						}
 	
-						<h2 class="">{title}</h2>
+						<h2>{title}</h2>
 	
-						<div class="tags">
-							{ tags.map( tag => <a href={`tag/${tag}`}>#{tag}</a> ) }
-						</div>
+						{
+						tags &&
+							<div class="tags">
+								{ tags.map( tag => <a href={`/tag/${tag}`}>#{tag}</a> ) }
+							</div>
+						}
 
 					</header>
+
+					{
+					uri && <SocialShare uri={uri}/>
+					}
 		
 					<slot />
 	
@@ -72,13 +83,21 @@ main {
 article {
 	position : relative;
 	padding-inline: var(--spacing-x-default);
-	background-color: hsl( var(--clr-primary-1), 0.3 );
+	background: linear-gradient(
+		hsl( var(--clr-primary-2) ),
+		transparent 50%
+	);
 }
 
 header {
-	padding : 3rem 1rem;
-	background-image: url('/public/assets/img/article-heading.svg');
-	background-size: cover;
+	padding : 4rem 1rem;
+	transform: translateY(-2rem);
+	background-image: 
+		url(/public/assets/img/megaphone.svg),
+		url(/public/assets/img/article-heading.svg);
+	background-size: contain, cover;
+	background-repeat: no-repeat;
+	background-position: right center, top left; 
 	border-radius: 0.5rem;
 }
 
@@ -95,6 +114,10 @@ h2 {
 	display: inline-block;
 	margin-right : 1rem;
 	color : hsl( var(--clr-primary-3) );
+}
+
+.tags a:hover {
+	text-decoration: underline;
 }
 
 @media screen and (min-width : 850px) {

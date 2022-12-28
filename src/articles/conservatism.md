@@ -8,6 +8,7 @@ tags :
   - right-wing
   - capitalism
   - conservativism
+  - center-right
 ---
 
 

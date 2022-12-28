@@ -29,18 +29,17 @@ const { pages } = Astro.props
 
 ---
 
-<ArticleLayout title="poop">
+<ArticleLayout title={`Posts tagged with: ${tag}`}>
 
-  <h2>Articles tagged with #{tag}</h2>
   <div class="tagged-posts mb3">
 
     {
     pages.map( page => (
       <Card
-      title={ page.frontmatter.title }
-      content={ page.frontmatter.excerpt }
-      link={`/politics/${page.frontmatter.uri}`}
-      tags={ page.frontmatter.tags }
+        title={ page.frontmatter.title }
+        content={ page.frontmatter.excerpt }
+        link={`/politics/${page.frontmatter.uri}`}
+        tags={ page.frontmatter.tags }
       />
     ))
     }

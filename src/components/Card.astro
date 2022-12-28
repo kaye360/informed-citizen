@@ -10,7 +10,7 @@ const { title, content, link, tags = [] } = await Astro.props
   {
   tags &&
     <div class="tags">
-      { tags.map( (tag: string) => <><a href={`/tag/${tag}`}>#{tag}</a>&nbsp;</>) }
+      { tags.map( (tag: string) => <a href={`/tag/${tag}`}>#{tag}</a> )}
     </div>
   }
 
@@ -31,7 +31,7 @@ const { title, content, link, tags = [] } = await Astro.props
 <style>
 
 .card {
-  padding : 0 4vw 2rem 4vw; 
+  padding : 0 2vw 2rem 2vw; 
   background: #fff;
   border : 1px solid #E2E0EB;
   border-radius: 8px;
@@ -70,7 +70,9 @@ const { title, content, link, tags = [] } = await Astro.props
 }
 
 .tags {
-  /* word-spacing: 1rem; */
+  display : flex;
+  flex-wrap: wrap;
+  column-gap : 0.7rem;
 }
 
 .tags a {
@@ -86,6 +88,14 @@ const { title, content, link, tags = [] } = await Astro.props
   display : flex;
   align-items: center;
   gap : 0.5rem;
+  width : fit-content;
+  margin-left : 7px;
+  outline : 1px solid hsl( var(--clr-primary-2) );
+  outline-offset: 10px;
+}
+
+.read-more-link:hover {
+  outline : 1px solid hsl( var(--clr-primary-4) );
 }
 
 </style>

@@ -1,0 +1,31 @@
+---
+
+const { uri } = Astro.props
+const shareLink = `https://informed-citizen.net/politics/${uri}`
+
+---
+
+<div>
+  Share this: 
+  <a href={`https://www.facebook.com/sharer/sharer.php?u=${shareLink}`} target="_blank">FB</a>
+  <a href={`https://twitter.com/intent/tweet?text=${shareLink}`} target="_blank">TW</a>
+  <a href="#" class="copy-link-to-clipboard" data-sharelink={shareLink}>Copy</a>
+</div>
+
+<style>
+div {
+  font-weight : 600; 
+}
+</style>
+
+<script type="module">
+
+const copyToClipBoardLink = document.querySelector('.copy-link-to-clipboard')
+copyToClipBoardLink.addEventListener('click',  copyToClipBoard)
+
+function copyToClipBoard() {
+  navigator.clipboard.writeText(this.dataset.sharelink)
+  copyToClipBoardLink.innerHTML = "Copied!"
+}
+
+</script>

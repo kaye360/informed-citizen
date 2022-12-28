@@ -19,6 +19,7 @@ const { Content, frontmatter} = Astro.props.page
   tags={frontmatter.tags}
   date={frontmatter.date.slice(0,10)}
   author={frontmatter.author}
+  uri={frontmatter.uri}
 >
 
 <Content />
