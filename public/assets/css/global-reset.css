@@ -80,7 +80,7 @@ h1 {
 }
 
 h2 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: var(--font-size-3);
   line-height: calc( var(--font-size-3) * 1.5);
   margin-block: var(--font-size-3);

@@ -11,8 +11,6 @@ tags :
 ---
 
 
-## Libertarianism
-
 Libertarianism is a political ideology that advocates for individual freedom and liberty, and for a limited role for government in society. Libertarians believe that individuals have the right to be free from interference by the state or other authority, and that they should be able to live their lives as they see fit as long as they do not harm others.
 
 Libertarians support the idea of a free market economy in which individuals and businesses are free to pursue their own interests and goals, and they generally oppose government intervention in the economy. They also advocate for the protection of individual rights, including the right to private property, and for a limited role for government in protecting these rights.

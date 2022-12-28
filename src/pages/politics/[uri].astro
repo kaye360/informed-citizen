@@ -14,7 +14,12 @@ const { Content, frontmatter} = Astro.props.page
 
 ---
 
-<ArticleLayout title={frontmatter.title}>
+<ArticleLayout 
+  title={frontmatter.title} 
+  tags={frontmatter.tags}
+  date={frontmatter.date.slice(0,10)}
+  author={frontmatter.author}
+>
 
 <Content />
 

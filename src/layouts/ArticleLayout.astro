@@ -4,7 +4,7 @@ import Logo from "../components/Logo.astro";
 import MobileBtn from "../components/MobileBtn.astro";
 import Sidebar from "../components/Sidebar.astro";
 import Footer from "../components/Footer.astro";
-const { title } = Astro.props;
+const { title, tags, date, author } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -33,7 +33,22 @@ const { title } = Astro.props;
 					<MobileBtn />
 				</div>
 	
-				<article>
+				<article class="mt1">
+
+
+					<header class="mb3">
+						
+						<div class="page-info">
+							Posted on {date} by {author}
+						</div>
+	
+						<h2 class="">{title}</h2>
+	
+						<div class="tags">
+							{ tags.map( tag => <a href={`tag/${tag}`}>#{tag}</a> ) }
+						</div>
+
+					</header>
 		
 					<slot />
 	
@@ -55,7 +70,31 @@ main {
 }
 
 article {
+	position : relative;
 	padding-inline: var(--spacing-x-default);
+	background-color: hsl( var(--clr-primary-1), 0.3 );
+}
+
+header {
+	padding : 3rem 1rem;
+	background-image: url('/public/assets/img/article-heading.svg');
+	background-size: cover;
+	border-radius: 0.5rem;
+}
+
+.page-info {
+	color : hsl( var(--clr-primary-3) );
+}
+
+h2 {
+	font-size: var(--font-size-4);
+	color : hsl( var(--clr-primary-1) );
+}
+
+.tags a {
+	display: inline-block;
+	margin-right : 1rem;
+	color : hsl( var(--clr-primary-3) );
 }
 
 @media screen and (min-width : 850px) {

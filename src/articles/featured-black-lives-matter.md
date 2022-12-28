@@ -12,8 +12,6 @@ tags :
 ---
 
 
-## Black Lives Matter movement
-
 Black Lives Matter (BLM) is a social and political movement that seeks to address issues of systemic racism and discrimination against black people. The movement was founded in 2013 in response to the acquittal of Trayvon Martin's killer, and has since grown to become a global movement for racial justice and equality.
 
 BLM seeks to raise awareness about the ways in which black people are disproportionately impacted by police violence, racial profiling, and other forms of discrimination and violence. It also works to advocate for policy changes and reforms that address these issues, and to support and empower black communities.
