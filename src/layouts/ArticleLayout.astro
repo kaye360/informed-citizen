@@ -1,0 +1,81 @@
+---
+import Skip from "../components/Skip.astro";
+import Logo from "../components/Logo.astro";
+import MobileBtn from "../components/MobileBtn.astro";
+import Sidebar from "../components/Sidebar.astro";
+import Footer from "../components/Footer.astro";
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="stylesheet" href="/assets/css/main.css">
+		<meta name="generator" content={Astro.generator} />
+		<title>{title} - All about the political ideology of {title}</title>
+	</head>
+	<body>
+
+		<Skip />
+
+
+		<main id="content">
+
+			<Sidebar />
+
+			<section>
+
+				<div class="logo-wrapper">
+					<Logo />
+					<MobileBtn />
+				</div>
+	
+				<article>
+		
+					<slot />
+	
+				</article>
+
+			</section>
+
+		</main>
+
+		<Footer></Footer>
+	</body>
+</html>
+
+<style>
+
+
+main {
+	display: grid;
+}
+
+article {
+	padding-inline: var(--spacing-x-default);
+}
+
+@media screen and (min-width : 850px) {
+
+	main {
+		grid-template-columns: 1fr 0.3fr;
+	}
+
+	article {
+		order : 1;
+	}
+
+}
+
+
+.logo-wrapper {
+  display : flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+</style>

@@ -4,17 +4,19 @@ import HomeLayout from '../layouts/HomeLayout.astro';
 import Hero from '../components/Hero.astro';
 import Logo from '../components/Logo.astro';
 import Card from '../components/Card.astro';
+
+const pages = await Astro.glob('../articles/*.md')
 ---
 
 
-<HomeLayout title="Welcome to Astro.">
+<HomeLayout title="informed/citizen - Politics">
 
-	<div class="home-grid container">
-		<Hero />
+	<section class="home-grid container">
 		<Sidebar />		
-	</div>
+		<Hero />
+	</section>
 
-	<div class="about container">
+	<section class="about container">
 		<h2>
 			About <Logo link={ false } />
 		</h2>
@@ -40,63 +42,31 @@ import Card from '../components/Card.astro';
 				informed/citizen is not affiliated with any political organizations or lobby groups.
 			</p>
 		</div>
-	</div>
+	</section>
 	
 	
-	<div class="explore container-lg">
+	<section class="explore container-lg">
 		<h2>
 			Expore More
 		</h2>
 
 		<div class="explore-grid">
-
-			<Card 
-				title="Liberalism"
-				content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam hic molestias facilis. Excepturi error perspiciatis iusto fugit, maxime itaque id laudantium ipsum labore! Corrupti, molestiae non! Sint voluptatem aliquid rem."
-				tags="left-of-center, capitalism, liberalism"
-				link="#"
-			/>
-
-			<Card 
-				title="Liberalism"
-				content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam hic molestias facilis. Excepturi error perspiciatis iusto fugit, maxime itaque id laudantium ipsum labore! Corrupti, molestiae non! Sint voluptatem aliquid rem."
-				tags="left-of-center, capitalism, liberalism"
-				link="#"
-			/>
-
-			<Card 
-				title="Liberalism"
-				content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam hic molestias facilis. Excepturi error perspiciatis iusto fugit, maxime itaque id laudantium ipsum labore! Corrupti, molestiae non! Sint voluptatem aliquid rem."
-				tags="left-of-center, capitalism, liberalism"
-				link="#"
-			/>
-
-			<Card 
-				title="Liberalism"
-				content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam hic molestias facilis. Excepturi error perspiciatis iusto fugit, maxime itaque id laudantium ipsum labore! Corrupti, molestiae non! Sint voluptatem aliquid rem."
-				tags="left-of-center, capitalism, liberalism"
-				link="#"
-			/>
-
-			<Card 
-				title="Liberalism"
-				content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam hic molestias facilis. Excepturi error perspiciatis iusto fugit, maxime itaque id laudantium ipsum labore! Corrupti, molestiae non! Sint voluptatem aliquid rem."
-				tags="left-of-center, capitalism, liberalism"
-				link="#"
-			/>
-
-			<Card 
-				title="Liberalism"
-				content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam hic molestias facilis. Excepturi error perspiciatis iusto fugit, maxime itaque id laudantium ipsum labore! Corrupti, molestiae non! Sint voluptatem aliquid rem."
-				tags="left-of-center, capitalism, liberalism"
-				link="#"
-			/>
+			{
+			pages.map( page => (
+				<Card
+					title={ page.frontmatter.title }
+					content={ page.frontmatter.excerpt }
+					link={`/politics/${page.frontmatter.uri}`}
+					tags={ page.frontmatter.tags }
+				/>
+			))
+			}
 			
 		</div>
-	</div>
+	</section>
 
 
-	<div class="topics container-sm">
+	<section class="topics container-sm">
 		<h2 class="text-center">
 			Topics
 		</h2>
@@ -106,9 +76,12 @@ import Card from '../components/Card.astro';
 			#left-wing #right-wing #liberal #black-lives-matter #paleo-conservative #marxism #maga #critical-race-theory 
 			#left-wing #right-wing #liberal #black-lives-matter #paleo-conservative #marxism #maga #critical-race-theory   
 		</p>
-	</div>
+	</section>
 
 </HomeLayout>
+
+
+
 
 <style>
 

@@ -7,7 +7,7 @@ const { activePage, } = Astro.props;
 
 <section class="sidebar">
 
-  <nav>
+  <nav id="nav">
   
     <ul class="main-nav">
       <li><a href="#">Home</a></li>
@@ -53,7 +53,8 @@ const { activePage, } = Astro.props;
   .sidebar {
     display : block;
     position: static;
-    padding-top : 2rem;
+    order : 2;
+    padding-block : 2rem;
   }
 }
 

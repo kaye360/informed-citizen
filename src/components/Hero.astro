@@ -2,9 +2,12 @@
 import Logo from "./Logo.astro";
 import Card from "./Card.astro";
 import MobileBtn from "./MobileBtn.astro";
+
+const pages = await Astro.glob('../articles/featured-*.md')
+
 ---
 
-<div class="hero">
+<section class="hero">
 
   <div class="logo-wrapper">
     <Logo />
@@ -23,41 +26,25 @@ import MobileBtn from "./MobileBtn.astro";
 
   <div class="hero-grid">
 
-    <Card
-      title="Liberalism"
-      content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vero est consequatur atque praesentium harum architecto ipsam veritatis totam. Tempore inventore et, ipsam hic eos tenetur sequi placeat necessitatibus! Dolore!"
-    />
-
-    <Card
-      title="Liberalism"
-      content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vero est consequatur atque praesentium harum architecto ipsam veritatis totam. Tempore inventore et, ipsam hic eos tenetur sequi placeat necessitatibus! Dolore!"
-    />
-
-    <Card
-      title="Liberalism"
-      content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vero est consequatur atque praesentium harum architecto ipsam veritatis totam. Tempore inventore et, ipsam hic eos tenetur sequi placeat necessitatibus! Dolore!"
-    />
-
-    <Card
-      title="Liberalism"
-      content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vero est consequatur atque praesentium harum architecto ipsam veritatis totam. Tempore inventore et, ipsam hic eos tenetur sequi placeat necessitatibus! Dolore!"
-    />
-
-    <Card
-      title="Liberalism"
-      content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vero est consequatur atque praesentium harum architecto ipsam veritatis totam. Tempore inventore et, ipsam hic eos tenetur sequi placeat necessitatibus! Dolore!"
-    />
-
-    <Card
-      title="Liberalism"
-      content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vero est consequatur atque praesentium harum architecto ipsam veritatis totam. Tempore inventore et, ipsam hic eos tenetur sequi placeat necessitatibus! Dolore!"
-    />
+    {
+    pages.map( page => (
+      <Card
+        title={ page.frontmatter.title }
+        content={ page.frontmatter.excerpt }
+        link={`/politics/${page.frontmatter.uri}`}
+      />
+    ))
+    }
 
   </div>
 
-</div>
+</section>
 
 <style>
+
+.hero {
+  order : 1;
+}
 
 .logo-wrapper {
   display : flex;
