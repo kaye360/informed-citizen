@@ -4,7 +4,12 @@ uri : liberalism
 excerpt : Liberalism is a political ideology that emphasizes individual liberty, democracy, and the protection of individual rights. It is based on the idea that individuals are the primary unit of society and that they have the right to be free from interference by the state or other authority.
 date: 2022-12-25
 author : admin
-tags : tags
+tags : 
+  - liberalism
+  - left-of-center
+  - capitalism
+  - social-democracy
+  - centrism
 ---
 
 ## Liberalism

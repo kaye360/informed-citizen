@@ -5,7 +5,8 @@ import Hero from '../components/Hero.astro';
 import Logo from '../components/Logo.astro';
 import Card from '../components/Card.astro';
 
-const pages = await Astro.glob('../articles/*.md')
+let pages = await Astro.glob('../articles/*.md')
+pages = pages.slice(0,9)
 ---
 
 
@@ -63,6 +64,8 @@ const pages = await Astro.glob('../articles/*.md')
 			}
 			
 		</div>
+
+		View More 
 	</section>
 
 
@@ -155,17 +158,18 @@ const pages = await Astro.glob('../articles/*.md')
 .explore-grid {
 	display : grid;
 	gap : 1.3rem;
+	padding-inline: var(--spacing-x-default);
 }
 
 @media screen and (min-width : 850px) {
 	.explore-grid {
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 }
 
 @media screen and (min-width : 1200px) {
 	.explore-grid {
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
 	}
 }
 

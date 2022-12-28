@@ -1,0 +1,54 @@
+---
+import ArticleLayout from "../../layouts/ArticleLayout.astro";
+
+const allPages = await Astro.glob('../../articles/*.md')
+let allTags = new Set()
+
+allPages.map( page => {
+  page.frontmatter.tags && page.frontmatter.tags.map( tag => {
+    return allTags.add(tag)
+  })  
+})
+
+let allTagsArray = Array.from(allTags).sort()
+
+---
+
+<ArticleLayout title="All Topics">
+
+  <p>
+    All topics:
+  </p>
+
+  <ul class="mb3">
+  {
+  allTagsArray.map( tag => (
+    <li>
+      <a href={`/tag/${tag}`}>{tag}</a>
+    </li>
+  ))
+  }
+
+  </ul>
+
+</ArticleLayout>
+
+<style>
+  
+  @media screen and (min-width : 850px) {
+    ul {
+      columns: 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+    }
+  }
+
+  li {
+    margin-block : 0.4rem;
+  }
+
+  a {
+    color : #333;
+  }
+  
+</style>

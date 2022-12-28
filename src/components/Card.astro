@@ -1,10 +1,6 @@
 ---
 
-const { title, content, link, tags = '' } = Astro.props
-
-let articleTags = tags.split(',').map( tag => {
-  return tag = tag.trim()
-})
+const { title, content, link, tags = [] } = await Astro.props
 ---
 
 <article class="card">
@@ -14,7 +10,7 @@ let articleTags = tags.split(',').map( tag => {
   {
   tags &&
     <div class="tags">
-      { articleTags.map( (tag: string) => <a href={`/tag/${tag}`}>#{tag}  </a> ) }
+      { tags.map( (tag: string) => <><a href={`/tag/${tag}`}>#{tag}</a>&nbsp;</>) }
     </div>
   }
 
@@ -71,6 +67,10 @@ let articleTags = tags.split(',').map( tag => {
   left : 0;
   width :75px;
   border-bottom : 1px solid #999;
+}
+
+.tags {
+  /* word-spacing: 1rem; */
 }
 
 .tags a {

@@ -1,0 +1,60 @@
+---
+import ArticleLayout from "../../layouts/ArticleLayout.astro";
+import Card from "../../components/Card.astro";
+
+export async function getStaticPaths() {
+  const allPages = await Astro.glob('../../articles/*.md')
+  let allTags = new Set()
+
+  allPages.map( page => {
+    page.frontmatter.tags && page.frontmatter.tags.map( tag => {
+      return allTags.add(tag)
+    })  
+  })
+
+  let allTagsArray = Array.from(allTags).sort()
+
+  return allTagsArray.map( tag => {
+    const filteredPages = allPages.filter( page => page.frontmatter.tags.includes(tag))
+    return {
+      params : { tag },
+      props : { pages : filteredPages }
+    }
+  })
+}
+
+const { tag } = Astro.params
+const { pages } = Astro.props
+
+
+---
+
+<ArticleLayout title="poop">
+
+  <h2>Articles tagged with #{tag}</h2>
+  <div class="tagged-posts mb3">
+
+    {
+    pages.map( page => (
+      <Card
+      title={ page.frontmatter.title }
+      content={ page.frontmatter.excerpt }
+      link={`/politics/${page.frontmatter.uri}`}
+      tags={ page.frontmatter.tags }
+      />
+    ))
+    }
+
+</div>
+
+</ArticleLayout>
+
+<style>
+
+.tagged-posts {
+  display : flex;
+  flex-direction: column;
+  gap : 1.3rem;
+}
+
+</style>
