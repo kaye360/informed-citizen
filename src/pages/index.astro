@@ -6,6 +6,25 @@ import Logo from '../components/Logo.astro';
 import Card from '../components/Card.astro';
 
 let pages = await Astro.glob('../articles/*.md')
+let tags : string[] = []
+
+pages.map( page => {
+  page.frontmatter.tags && page.frontmatter.tags.forEach( (tag : string) => {
+    tags.push(tag);
+  })  
+})
+
+const tagsWithCount = tags.reduce( (a, b) => {
+  a[b] = (a[b] || 0) +1
+	return a
+}, {})
+
+let tagsSortedByCount = Object.keys(tagsWithCount).sort(function(a, b) {
+  return tagsWithCount[b] - tagsWithCount[a];
+});
+
+tagsSortedByCount = tagsSortedByCount.slice(0,15)
+
 pages = pages.slice(0,9)
 ---
 
@@ -69,15 +88,21 @@ pages = pages.slice(0,9)
 	</section>
 
 
-	<section class="topics container-sm">
+	<section class="topics container-xs">
 		<h2 class="text-center">
-			Topics
+			Trending Topics
 		</h2>
 
 		<p class="topics-tags">
-			#left-wing #right-wing #liberal #black-lives-matter #paleo-conservative #marxism #maga #critical-race-theory
-			#left-wing #right-wing #liberal #black-lives-matter #paleo-conservative #marxism #maga #critical-race-theory 
-			#left-wing #right-wing #liberal #black-lives-matter #paleo-conservative #marxism #maga #critical-race-theory   
+
+			{
+			tagsSortedByCount.map( tag => {
+				return(
+					<a href={`/tag/${tag}`}>#{tag}</a>
+				)
+			} )
+
+			}
 		</p>
 	</section>
 
@@ -173,9 +198,19 @@ pages = pages.slice(0,9)
 }
 
 .topics-tags {
-	text-align: center;
-	line-height: 2rem;
-	word-spacing: 2rem;
+	display : flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	column-gap: 2rem;
+	row-gap: 1rem;
+	font-size: var(--font-size-2);
+}
+
+.topics a {
+	display : inline-block;
+	padding : 0.3rem 0.6rem;
+	border-radius: 5px;
+	background-color: hsl( var(--clr-primary-1) );
 }
 
 </style>
