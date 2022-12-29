@@ -1,6 +1,25 @@
 ---
 const { activePage, } = Astro.props;
 
+let pages = await Astro.glob('../articles/*.md')
+let tags : string[] = []
+
+pages.map( page => {
+  page.frontmatter.tags && page.frontmatter.tags.forEach( (tag : string) => {
+    tags.push(tag);
+  })  
+})
+
+const tagsWithCount = tags.reduce( (a, b) => {
+  a[b] = (a[b] || 0) +1
+	return a
+}, {})
+
+let tagsSortedByCount = Object.keys(tagsWithCount).sort(function(a, b) {
+  return tagsWithCount[b] - tagsWithCount[a];
+});
+
+tagsSortedByCount = tagsSortedByCount.slice(0,15).reverse()
 
 ---
 
@@ -11,25 +30,19 @@ const { activePage, } = Astro.props;
   
     <ul class="main-nav">
       <li><a href="/">Home</a></li>
-      <li><a href="/tag">Topics</a></li>
-      <li><a href="#">Popular</a></li>
+      <li><a href="/tag">All Topics</a></li>
+      <li><a href="#">Trending Articles</a></li>
     </ul>
   
 
     <ul class="topics-nav">
-      <li><a href="#">#liberal</a></li>
-      <li><a href="#">#conservative</a></li>
-      <li><a href="#">#critical-race-theory</a></li>
-      <li><a href="#">#maga</a></li>
-      <li><a href="#">#liberal</a></li>
-      <li><a href="#">#conservative</a></li>
-      <li><a href="#">#critical-race-theory</a></li>
-      <li><a href="#">#maga</a></li>
-      <li><a href="#">#liberal</a></li>
-      <li><a href="#">#conservative</a></li>
-      <li><a href="#">#critical-race-theory</a></li>
-      <li><a href="#">#maga</a></li>
-      <li><a href="#" class="more-topics-btn">More Topics</a></li>
+      {
+      tagsSortedByCount.map( tag => (
+        <li>
+          <a href={`/tag/${tag}`}>#{tag}</a>
+        </li>
+      ))
+      }
     </ul>
 
   </nav>

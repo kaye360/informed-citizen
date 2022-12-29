@@ -20,7 +20,9 @@ const pages = await Astro.glob('../articles/featured-*.md')
     </h1>
 
     <p>
-      Too many people today have strong opinions on politics without a basic understanding of various viewpoints. Learn the essentials of political ideologies and concepts - without bias or spin.
+      Too many people today live in a <strong>political bubble</strong>. <br />
+      Too few people seek to understand <strong>alternative viewpoints</strong>. <br />
+      Learn the essentials of political ideologies and concepts - without bias or spin.
     </p>
   </div>
 
@@ -65,8 +67,13 @@ const pages = await Astro.glob('../articles/featured-*.md')
 }
 
 .hero-intro p {
-  font-size: var(--font-size-2);
-  line-height: var(--font-size-4);
+  font-size: var(--font-size-1);
+  line-height: var(--font-size-3);
+}
+
+.hero-intro strong {
+  font-weight: 700;
+  color : hsl( var(--clr-primary-6) );
 }
 
 .hero-grid {
