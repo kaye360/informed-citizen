@@ -33,8 +33,9 @@ const { title, content, link, tags = [] } = await Astro.props
 .card {
   padding : 0 2vw 2rem 2vw; 
   background: #fff;
-  border : 1px solid #E2E0EB;
+  border : 1px solid hsl( var(--clr-primary-3), 0.6 );
   border-radius: 8px;
+  box-shadow: 5px 5px 10px hsl( var(--clr-primary-2), 0.5 );
 }
 
 .card:nth-child(4),

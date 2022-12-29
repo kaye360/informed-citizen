@@ -46,6 +46,7 @@ const pages = await Astro.glob('../articles/featured-*.md')
 
 .hero {
   order : 1;
+  background-color: hsl( var(--clr-primary-1), 0.3 );
 }
 
 .logo-wrapper {
@@ -56,24 +57,29 @@ const pages = await Astro.glob('../articles/featured-*.md')
 }
 
 .hero-intro {
+  position: relative;
   padding : 1rem 2vw 3rem 2vw;
-  background-image: url('/assets/img/hero.png');
+  background-image: 
+    url('/assets/img/hero.png'),
+    url(/assets/img/article-heading.svg);
   background-size: cover;
-  background-position: center;
+  background-position: center top, center bottom;
+  background-blend-mode:hard-light;
+  border-radius: 1rem;
+  color : hsl( var(--clr-primary-2) );
 }
 
 .hero-intro h1 span {
-  color : hsl( var(--clr-primary-5) );
+  color : hsl( var(--clr-primary-4) );
 }
 
 .hero-intro p {
-  font-size: var(--font-size-1);
-  line-height: var(--font-size-3);
+  font-size: var(--font-size-2);
+  line-height: var(--font-size-4);
 }
 
 .hero-intro strong {
   font-weight: 700;
-  color : hsl( var(--clr-primary-6) );
 }
 
 .hero-grid {

@@ -73,6 +73,14 @@ const { title, tags = [], date, author, uri } = Astro.props;
 	</body>
 </html>
 
+
+<style is:global>
+	#content p {
+		max-width: 60ch;
+	}
+</style>
+
+
 <style>
 
 
@@ -93,8 +101,8 @@ header {
 	padding : 4rem 1rem;
 	transform: translateY(-2rem);
 	background-image: 
-		url(/public/assets/img/megaphone.svg),
-		url(/public/assets/img/article-heading.svg);
+		url(/assets/img/megaphone.svg),
+		url(/assets/img/article-heading.svg);
 	background-size: contain, cover;
 	background-repeat: no-repeat;
 	background-position: right center, top left; 
@@ -141,3 +149,4 @@ h2 {
 }
 
 </style>
+
