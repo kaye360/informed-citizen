@@ -12,8 +12,6 @@ tags :
 ---
 
 
-## What is Politics?
-
 Politics is the process by which decisions are made within groups, organizations, or societies. It involves the distribution of power and resources, and the creation and implementation of policies and laws.
 
 Politics can take place at many levels, from the individual interactions of people within a family or community, to the decision-making processes of governments and international organizations. It involves the negotiation and compromise of competing interests and values, and the use of various forms of power and influence to shape the outcomes of decisions.

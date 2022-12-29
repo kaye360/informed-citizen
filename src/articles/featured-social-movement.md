@@ -13,8 +13,6 @@ tags :
 ---
 
 
-## Social Movement
-
 A social movement is a collective effort by a group of people to bring about or resist social, political, economic, or cultural change. Social movements are typically characterized by their use of various tactics, such as protests, civil disobedience, and political lobbying, to bring attention to their cause and to pressure authorities or other decision-makers to make changes.
 
 Social movements can be driven by a wide variety of goals and motivations, including issues related to social justice, civil rights, environmental protection, and economic inequality. They may be organized around specific issues or causes, or they may be more broadly focused on bringing about broader social, political, or cultural change.

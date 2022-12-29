@@ -12,8 +12,6 @@ tags :
 ---
 
 
-## Social Democracy
-
 Social democracy is a political and economic ideology that combines elements of socialism and democracy. It advocates for a mixed economy, in which the means of production are largely owned and controlled by the private sector, but the government also plays a role in regulating the economy and redistributing wealth to promote greater equality.
 
 Social democrats believe in using the tools of democracy, such as the ballot box and the legislative process, to bring about gradual reform of the capitalist system and to create a more equal and just society. They support a welfare state that provides a safety net for those in need, and they advocate for policies such as progressive taxation and government-provided healthcare and education.

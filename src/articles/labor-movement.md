@@ -14,8 +14,6 @@ tags :
 ---
 
 
-## Labor Movement
-
 The labour movement, also known as the trade union movement or the labor movement, is a social movement that seeks to improve the rights, working conditions, and well-being of workers. The labour movement has a long history and has played a significant role in shaping the modern system of employment and labor relations.
 
 The labour movement is made up of trade unions, which are organizations of workers that advocate for better wages, benefits, and working conditions for their members. Trade unions use a variety of tactics, including negotiations with employers, strikes, and lobbying, to achieve their goals.

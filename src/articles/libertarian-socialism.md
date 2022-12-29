@@ -12,8 +12,6 @@ tags :
 ---
 
 
-## Libertarian Socialism
-
 Libertarian socialism is a political philosophy that combines elements of socialism and libertarianism. It advocates for the abolition of capitalism and the establishment of a society based on the common ownership and control of the means of production, as well as for individual freedom and autonomy.
 
 Libertarian socialists believe that a truly free and just society can only be achieved by getting rid of hierarchies and power imbalances, and by empowering individuals to make their own decisions and shape their own lives. They reject the idea that the state or any other centralized authority should have the power to control the lives of individuals, and advocate for decentralized and participatory forms of decision-making.

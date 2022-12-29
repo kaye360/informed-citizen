@@ -11,8 +11,6 @@ tags :
 ---
 
 
-## Critical Race Theory
-
 Critical race theory (CRT) is an intellectual movement and approach to understanding and addressing the ways in which race and racism intersect with other forms of oppression, such as class, gender, and sexuality. It is based on the idea that race and racism are not natural or inevitable, but are instead socially constructed and maintained through the operation of power and privilege.
 
 CRT challenges traditional legal and political approaches to race and racism, which often treat these issues as individual problems rather than as structural and systemic ones. It argues that race and racism are deeply embedded in the social, economic, and political systems of society, and that they cannot be addressed simply by changing laws or policies.

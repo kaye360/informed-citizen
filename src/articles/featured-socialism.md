@@ -13,8 +13,6 @@ tags :
   - democratic-socialism
 ---
 
-## Socialism
-
 Socialism is a political and economic theory that advocates for the public ownership and control of the means of production, distribution, and exchange of goods and services. It is based on the idea that resources and wealth should be shared more equally among members of a society, rather than being controlled by a small group of individuals or corporations.
 
 In a socialist society, the means of production are owned and controlled by the state, or by worker-owned cooperatives. The goal of socialism is to create a more equitable and just society by eliminating the exploitation of the working class and reducing social and economic inequalities.

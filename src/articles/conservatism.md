@@ -7,7 +7,7 @@ author : admin
 tags : 
   - right-wing
   - capitalism
-  - conservativism
+  - conservatism
   - center-right
 ---
 

@@ -12,8 +12,6 @@ tags :
   - marxism
 ---
 
-## Democratic Socialism
-
 Democratic socialism is a political and economic ideology that combines elements of socialism and democracy. It advocates for the public ownership and control of the means of production and distribution of goods and services, but also emphasizes the importance of democracy and political freedom.
 
 Democratic socialists believe that the wealth produced by society should be shared more evenly and that the government should play a central role in redistributing wealth and addressing social and economic inequalities. However, they also believe that the government should be accountable to the people and that individuals should have the right to participate in the decision-making process through a democratic process.

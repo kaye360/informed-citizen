@@ -1,0 +1,17 @@
+---
+let articles = await Astro.glob('../articles/*.md')
+
+const json = JSON.stringify(
+  articles.map( article => {
+    return {
+      title : article.frontmatter.title,
+      excerpt : article.frontmatter.excerpt,
+      tags : article.frontmatter.tags,
+      uri : article.frontmatter.uri
+    }
+  })
+)
+
+---
+
+{json}

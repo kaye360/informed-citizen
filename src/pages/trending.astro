@@ -1,0 +1,49 @@
+---
+import ArticleLayout from "../layouts/ArticleLayout.astro";
+import Card from "../components/Card.astro";
+
+const trendingArticlesTitles= [
+  'Critical Race Theory',
+  'What is Politics?',
+  'Make America Great Again',
+  'Black Lives Matter',
+]
+
+const articles = await Astro.glob('../articles/*.md')
+
+const trendingArticles = articles.filter( article =>{
+  return trendingArticlesTitles.includes(article.frontmatter.title)
+})
+console.log(trendingArticles)
+
+---
+
+<ArticleLayout title="Trending Articles">
+
+<p>
+  Here are topics that people are talking about:
+</p>
+
+<div class="article-wrapper mb2">
+  {
+  trendingArticles.map( article => (
+    <Card
+      title={article.frontmatter.title}
+      content={article.frontmatter.excerpt}
+      link={`/politics/${article.frontmatter.uri}`}
+      tags={article.frontmatter.tags}
+    />
+  ))
+  }
+</div>
+
+</ArticleLayout>
+
+<style>
+  
+.article-wrapper {
+  display : grid;
+  gap : 1.3rem;
+}
+  
+</style>

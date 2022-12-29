@@ -12,8 +12,6 @@ tags :
 ---
 
 
-## Anarchism
-
 Anarchism is a political philosophy and movement that advocates for the abolition of all forms of government and the establishment of a society based on voluntary cooperation and mutual aid. Anarchists believe that the state and other forms of authority are inherently oppressive and that they should be abolished in order to create a more just and equal society.
 
 Anarchism is based on the belief that individuals should be free to live their lives as they see fit, without interference from the state or other forms of authority. It rejects the idea that a small group of people should have the right to control the lives of others, and instead advocates for the decentralization of power and the creation of horizontal networks of mutual aid and cooperation.
