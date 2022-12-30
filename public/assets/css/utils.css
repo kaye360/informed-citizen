@@ -34,6 +34,15 @@
 .clr-t-7 { color : hsl( var(--clr-tertiary-7) ); }
 
 /* Margin Classes */
+.m0 { margin : 0rem; }
+.m1 { margin : 1rem; }
+.m2 { margin : 2rem; }
+.m3 { margin : 3rem; }
+.m4 { margin : 4rem; }
+.m5 { margin : 5rem; }
+.m6 { margin : 6rem; }
+.m7 { margin : 7rem; }
+
 .ml0 { margin-left : 0rem; }
 .ml1 { margin-left : 1rem; }
 .ml2 { margin-left : 2rem; }

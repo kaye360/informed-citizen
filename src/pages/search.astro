@@ -7,13 +7,22 @@ import ArticleLayout from "../layouts/ArticleLayout.astro";
 <ArticleLayout title="Search informed/citizen">
 
 
-<section class="search-results px1">
+<section class="search-results px1 mb3">
 
-  <div class="search-bar">
-    <input type="search" />
-  </div>
+  <form action="search" method="get">
+    <div class="search-bar">
+      <label for="q">Search:</label>
+      <input type="search" name="q" id="q" />
+      <button type="submit">
+        <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.0231 0C9.68631 0 3.7318 5.95451 3.7318 13.2913C3.7318 20.6281 9.68631 26.5827 17.0231 26.5827C24.3599 26.5827 30.3145 20.6281 30.3145 13.2913C30.3145 5.95451 24.3599 0 17.0231 0ZM17.0231 23.629C11.3123 23.629 6.68543 19.0022 6.68543 13.2913C6.68543 7.57901 11.3123 2.95363 17.0231 2.95363C22.7354 2.95363 27.3608 7.57901 27.3608 13.2913C27.3608 19.0022 22.7354 23.629 17.0231 23.629ZM4.49236 23.7339L0.314454 27.9103L2.40414 30L6.58058 25.8221L4.49236 23.7339V23.7339Z" fill="black"/>
+        </svg>
+          
+      </button>
+    </div>
+  </form>
 
-  <div class="search-result-message"></div>
+  <div class="search-result-message mt2"></div>
 
 </section>
 
@@ -22,17 +31,43 @@ import ArticleLayout from "../layouts/ArticleLayout.astro";
 
 <style>
 
+.search-results {
+  min-height: 100vh;
+}
+
 .search-bar {
-  transform: translateY(-2rem);
+  display :flex;
+  align-items: center;
+  gap : 1rem;
+  padding : 0.5rem 1rem;
+  background-color: #fff;
+  border : 1px solid hsl( var(--clr-primary-4) );
+  border-radius: 5px;
+  color : hsl( var(--clr-primary-6) );
+}
+
+.search-bar:hover {
+  background-color: hsl( var(--clr-primary-1) );
+}
+
+.search-bar:has( > input[type=search]:focus) {
+  background-color: hsl( var(--clr-primary-1) );
+  border-color: hsl( var(--clr-primary-6) );
+}
+
+.search-bar input[type=search] {
+  width : 100%;
+  border : 0;
+  outline : 0;
+  background : none;
+}
+
+.search-bar path {
+  fill : hsl( var(--clr-primary-6) );
 }
 
 .search-result-message {
   font-size: var(--font-size-2);
-}
-
-.search-results {
-  display :grid;
-  gap : 1.3rem;
 }
 
 </style>
