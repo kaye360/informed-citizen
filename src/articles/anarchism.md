@@ -1,11 +1,11 @@
 ---
-title :  Anarchism
-uri :  anarchism
+title : Anarchism
+uri : anarchism
 excerpt : Anarchism is a political philosophy and movement that advocates for the abolition of all forms of government and the establishment of a society based on voluntary cooperation and mutual aid. 
 date: 2022-12-26
 author : admin
 tags : 
-  - left-wing
+  -  left-wing
   - anarchism
   - libertarian
   - socialism
