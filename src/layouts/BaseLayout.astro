@@ -1,0 +1,75 @@
+---
+import Skip from "../components/Skip.astro";
+import Sidebar from "../components/Sidebar.astro";
+import Logo from "../components/Logo.astro";
+import MobileBtn from "../components/MobileBtn.astro";
+import Footer from "../components/Footer.astro";
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="stylesheet" href="/assets/css/main.css">
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+
+		<Skip />
+
+		<div class="base-layout container">
+
+			<Sidebar />
+
+			<div class="base-content">
+
+				<div class="logo-wrapper mb2">
+					<Logo />
+					<MobileBtn />
+				</div>
+
+				<main id="content">
+
+					<slot />
+
+				</main>
+
+			</div>
+
+		</div>
+
+		<slot name="secondary-content" />
+
+		<Footer></Footer>
+	</body>
+</html>
+
+
+<style>
+
+.base-layout { 
+	display : grid;
+}
+
+@media screen and (min-width : 850px) {
+	.base-layout {
+		grid-template-columns: 1fr 0.3fr;
+	}
+}
+
+main {
+	padding-inline : var(--spacing-x-default);
+}
+
+.logo-wrapper {
+	display : flex;
+	align-items: center;
+	justify-content: space-between;
+	padding : 1rem;
+}
+
+</style>

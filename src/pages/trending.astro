@@ -1,6 +1,7 @@
 ---
-import ArticleLayout from "../layouts/ArticleLayout.astro";
 import Card from "../components/Card.astro";
+import Header from "../components/Header.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 const trendingArticlesTitles= [
   'Critical Race Theory',
@@ -18,26 +19,28 @@ console.log(trendingArticles)
 
 ---
 
-<ArticleLayout title="Trending Articles">
+<BaseLayout title="Trending Articles">
 
-<p>
-  Here are topics that people are talking about:
-</p>
+  <Header title="Trending Articles" />
 
-<div class="article-wrapper mb2">
-  {
-  trendingArticles.map( article => (
-    <Card
-      title={article.frontmatter.title}
-      content={article.frontmatter.excerpt}
-      link={`/politics/${article.frontmatter.uri}`}
-      tags={article.frontmatter.tags}
-    />
-  ))
-  }
-</div>
+  <p>
+    Here are topics that people are talking about:
+  </p>
 
-</ArticleLayout>
+  <div class="article-wrapper mb2">
+    {
+    trendingArticles.map( article => (
+      <Card
+        title={article.frontmatter.title}
+        content={article.frontmatter.excerpt}
+        link={`/politics/${article.frontmatter.uri}`}
+        tags={article.frontmatter.tags}
+      />
+    ))
+    }
+  </div>
+
+</BaseLayout>
 
 <style>
   

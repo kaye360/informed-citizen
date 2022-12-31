@@ -1,92 +1,30 @@
 ---
-import Skip from "../components/Skip.astro";
-import Logo from "../components/Logo.astro";
-import MobileBtn from "../components/MobileBtn.astro";
-import Sidebar from "../components/Sidebar.astro";
-import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 import SocialShare from "../components/SocialShare.astro";
-const { title, tags = [], date, author, uri } = Astro.props;
+const { date, author, tags, title, uri} = Astro.props
 ---
-
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="stylesheet" href="/assets/css/main.css">
-		<meta name="generator" content={Astro.generator} />
-		<title>{title} - All about the political ideology of {title}</title>
-	</head>
-	<body>
-
-		<Skip />
-
-
-		<main class="container" id="content">
-
-			<Sidebar />
-
-			<section>
-
-				<div class="logo-wrapper">
-					<Logo />
-					<MobileBtn />
-				</div>
 	
-				<article class="mt3">
+<article class="mt3">
 
+	<Header
+		date={date}
+		author={author}
+		tags={tags}
+		title={title}
+		uri={uri}
+	/>
 
-					<header class="mb1">
-						
-						{
-						date && author &&
-							<div class="page-info">
-								Posted on {date} by {author}
-							</div>
-						}
-	
-						<h2>{title}</h2>
-	
-						{
-						tags &&
-							<div class="tags">
-								{ tags.map( tag => <a href={`/tag/${tag}`}>#{tag}</a> ) }
-							</div>
-						}
-
-					</header>
-
-					{
-					uri && <SocialShare uri={uri}/>
-					}
-		
-					<slot />
-	
-				</article>
-
-			</section>
-
-		</main>
-
-		<Footer></Footer>
-	</body>
-</html>
-
-
-<style is:global>
-	#content p {
-		max-width: 60ch;
+	{
+	uri && <SocialShare uri={uri}/>
 	}
-</style>
+
+	<slot /> <!-- Article Content -->
+
+</article>
+
 
 
 <style>
-
-
-main {
-	display: grid;
-}
 
 article {
 	position : relative;
@@ -95,57 +33,6 @@ article {
 		hsl( var(--clr-primary-2) ),
 		transparent 50%
 	);
-}
-
-header {
-	padding : 4rem 1rem;
-	transform: translateY(-2rem);
-	background-image: 
-		url(/assets/img/megaphone.svg),
-		url(/assets/img/article-heading.svg);
-	background-size: contain, cover;
-	background-repeat: no-repeat;
-	background-position: right center, top left; 
-	border-radius: 0.5rem;
-}
-
-.page-info {
-	color : hsl( var(--clr-primary-3) );
-}
-
-h2 {
-	font-size: var(--font-size-4);
-	color : hsl( var(--clr-primary-1) );
-}
-
-.tags a {
-	display: inline-block;
-	margin-right : 1rem;
-	color : hsl( var(--clr-primary-3) );
-}
-
-.tags a:hover {
-	text-decoration: underline;
-}
-
-@media screen and (min-width : 850px) {
-
-	main {
-		grid-template-columns: 1fr 0.3fr;
-	}
-
-	article {
-		order : 1;
-	}
-
-}
-
-
-.logo-wrapper {
-  display : flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
 }
 
 </style>

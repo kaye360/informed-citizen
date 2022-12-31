@@ -1,18 +1,11 @@
 ---
-import Logo from "./Logo.astro";
 import Card from "./Card.astro";
-import MobileBtn from "./MobileBtn.astro";
 
-const pages = await Astro.glob('../articles/featured-*.md')
+const pages = await Astro.glob('../articles/_featured-*.md')
 
 ---
 
-<section class="hero">
-
-  <div class="logo-wrapper">
-    <Logo />
-    <MobileBtn />
-  </div>
+<section class="hero" id="content">
 
   <div class="hero-intro">
     <h1>
@@ -20,7 +13,7 @@ const pages = await Astro.glob('../articles/featured-*.md')
     </h1>
 
     <p>
-      Too many people today live in a <strong>political echo chamber.</strong>. <br />
+      Too many people today live in a <strong>political echo chamber</strong>. <br />
       Too few people seek to understand <strong>alternative viewpoints</strong>. <br />
       Learn the essentials of political ideologies and concepts - without bias or spin.
     </p>
@@ -47,13 +40,6 @@ const pages = await Astro.glob('../articles/featured-*.md')
 .hero {
   order : 1;
   background-color: hsl( var(--clr-primary-1), 0.3 );
-}
-
-.logo-wrapper {
-  display : flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
 }
 
 .hero-intro {

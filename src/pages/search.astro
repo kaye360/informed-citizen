@@ -1,18 +1,19 @@
 ---
-import ArticleLayout from "../layouts/ArticleLayout.astro";
-
-
+import Header from "../components/Header.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<ArticleLayout title="Search informed/citizen">
+<BaseLayout title="Search informed/citizen">
 
 
-<section class="search-results px1 mb3">
+<section class="search-results mb3">
+
+  <Header title="Search" />
 
   <form action="search" method="get">
     <div class="search-bar">
-      <label for="q">Search:</label>
-      <input type="search" name="q" id="q" />
+      <label for="search-bar">Search:</label>
+      <input type="search" name="q" id="search-bar" />
       <button type="submit">
         <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M17.0231 0C9.68631 0 3.7318 5.95451 3.7318 13.2913C3.7318 20.6281 9.68631 26.5827 17.0231 26.5827C24.3599 26.5827 30.3145 20.6281 30.3145 13.2913C30.3145 5.95451 24.3599 0 17.0231 0ZM17.0231 23.629C11.3123 23.629 6.68543 19.0022 6.68543 13.2913C6.68543 7.57901 11.3123 2.95363 17.0231 2.95363C22.7354 2.95363 27.3608 7.57901 27.3608 13.2913C27.3608 19.0022 22.7354 23.629 17.0231 23.629ZM4.49236 23.7339L0.314454 27.9103L2.40414 30L6.58058 25.8221L4.49236 23.7339V23.7339Z" fill="black"/>
@@ -27,7 +28,7 @@ import ArticleLayout from "../layouts/ArticleLayout.astro";
 </section>
 
 
-</ArticleLayout>
+</BaseLayout>
 
 <style>
 

@@ -18,7 +18,6 @@ const searchResultJSON = []
 
 try {
 
-  // Loop thru article files directory
   const files = fs.readdirSync(articleDirectory)
   files.forEach(file => {
 
@@ -29,7 +28,6 @@ try {
     let tags = []
     let uri
 
-    // Loop thru file lines and extract frontmatter data
     const fileData = fs.readFileSync(`${articleDirectory}/${file}`, 'utf-8')
     fileData.split(/\r?\n/).forEach(line => {
 

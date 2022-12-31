@@ -1,0 +1,57 @@
+---
+const { date, author, title, tags } = Astro.props
+---
+
+<header class="mb1">
+		
+  {
+  date && author &&
+    <div class="page-info">
+      Posted on {date} by {author}
+    </div>
+  }
+
+  <h2>{title}</h2>
+
+  {
+  tags &&
+    <div class="tags">
+      { tags.map( tag => <a href={`/tag/${tag}`}>#{tag}</a> ) }
+    </div>
+  }
+
+</header>
+
+<style>
+  
+header {
+	padding : 4rem 1rem;
+	transform: translateY(-2rem);
+	background-image: 
+		url(/assets/img/megaphone.svg),
+		url(/assets/img/article-heading.svg);
+	background-size: contain, cover;
+	background-repeat: no-repeat;
+	background-position: right center, top left; 
+	border-radius: 0.5rem;
+}
+
+.page-info {
+	color : hsl( var(--clr-primary-3) );
+}
+
+h2 {
+	font-size: var(--font-size-4);
+	color : hsl( var(--clr-primary-1) );
+}
+
+.tags a {
+	display: inline-block;
+	margin-right : 1rem;
+	color : hsl( var(--clr-primary-3) );
+}
+
+.tags a:hover {
+	text-decoration: underline;
+}
+</style>
