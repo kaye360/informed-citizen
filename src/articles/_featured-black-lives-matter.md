@@ -9,6 +9,9 @@ tags :
   - anti-racism
   - defund-the-police
   - identity-politics
+metaTitle : Black Lives Matter movement - All about the movement, organization, history and political ideology of BLM
+metaDescription : Black Lives Matter is a movement that sprung up in the United States to combat systemic racism and police brutality. The movement and it's ideas have since grown world-wide.
+metaKeywords : black lives matter, blm, defund the polics, left-wing, leftist, liberal, protest, movement for black lives, george floyd, patrisse cullors, alicia garza, opal tometti, united states, racism, anti-racism, systemic racism
 ---
 
 

@@ -4,7 +4,7 @@ import Sidebar from "../components/Sidebar.astro";
 import Logo from "../components/Logo.astro";
 import MobileBtn from "../components/MobileBtn.astro";
 import Footer from "../components/Footer.astro";
-const { title } = Astro.props;
+const { metaDescription, metaKeywords, metaTitle } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -12,10 +12,14 @@ const { title } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
+
+		<meta name="description" content={metaDescription} />
+		<meta name="keywords" content={metaKeywords} />
+
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="stylesheet" href="/assets/css/main.css">
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<title>{metaTitle}</title>
 	</head>
 	<body>
 

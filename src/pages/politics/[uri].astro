@@ -15,7 +15,12 @@ const { Content, frontmatter} = Astro.props.page
 
 ---
 
-<BaseLayout>
+<BaseLayout
+  metaTitle={frontmatter.metaTitle} 
+  metaKeywords={frontmatter.metaKeywords}
+  metaDescription={frontmatter.metaDescription}
+  >
+
   <ArticleLayout 
     title={frontmatter.title} 
     tags={frontmatter.tags}
@@ -23,8 +28,12 @@ const { Content, frontmatter} = Astro.props.page
     author={frontmatter.author}
     uri={frontmatter.uri}
   >
+
     <Content />
+
   </ArticleLayout>
+
 </BaseLayout>
+
 
 
