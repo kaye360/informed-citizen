@@ -20,6 +20,21 @@ const { metaDescription, metaKeywords, metaTitle } = Astro.props;
 		<link rel="stylesheet" href="/assets/css/main.css">
 		<meta name="generator" content={Astro.generator} />
 		<title>{metaTitle}</title>
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://informed-citizen.net">
+		<meta property="og:title" content={metaTitle}>
+		<meta property="og:description" content={metaDescription}>
+		<meta property="og:image" content="https://informed-citizen.net/assets/img/social-card.png">
+
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:url" content="https://informed-citizen.net">
+		<meta name="twitter:title" content={metaTitle}>
+		<meta name="twitter:description" content={metaDescription}>
+		<meta name="twitter:image" content="https://informed-citizen.net/assets/img/social-card.png">
+
 	</head>
 	<body>
 
