@@ -1,7 +1,7 @@
 ---
 title : Communism
 uri : communism
-excerpt : adsfs
+excerpt : Communism is a political and economic ideology that advocates for the establishment of a classless, stateless society in which the means of production are owned and controlled by the community as a whole, rather than by private individuals. 
 date: 2022-12-26
 author : admin
 tags : 
@@ -11,9 +11,9 @@ tags :
   - anarchism
   - marxism
   - marxism-leninism
-metaTitle : Communism
-metaDescription : com
-metaKeywords : com
+metaTitle : Communism - polical ideology, theory, history and thinkers
+metaDescription : Communism is a political/economic ideology that advocates for the establishment of a classless, stateless, moneyless society with the economy controlled by the working-class
+metaKeywords : communism, communist, marxism, marxist, socialism, karl marx, vladimir lenin, mao zedong
 ---
 
 ![A communist hammer and sickle flag](/assets/img/articles/communism.jpg)
