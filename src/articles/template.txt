@@ -5,9 +5,9 @@ excerpt :
 date: 2022-12-26
 author : admin
 tags : tags
-metaTitle :
-metaDescription :
-metaKeywords :
+metaTitle : 50-70 characters
+metaDescription : 150-160 chars
+metaKeywords : 10 keywords
 ---
 
 

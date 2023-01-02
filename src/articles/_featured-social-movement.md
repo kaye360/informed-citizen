@@ -10,6 +10,9 @@ tags :
   - right-wing
   - labor-movement
   - identity-politics
+metaTitle : Social Movements - political movements for societal change
+metaDescription :  Social movements are typically characterized by their use of various tactics, such as protests, civil disobedience, and political lobbying, to bring politcal change
+metaKeywords : social movement, political movement, black lives matter, labor movement, labour movement
 ---
 
 ![People protesting in the streets in Los Angeles, USA](/assets/img/articles/social-movement.jpg)
@@ -20,7 +23,7 @@ These movements can be driven by a wide variety of goals and motivations, includ
 
 ## Ideologies of Social movements
 
-Mass movements for political change can be either [left-wing](/tag/left-wing) or [right-wing](/tag/right-wing), although most modern day movements are on the left side of the political spectrum.
+Mass movements for political change can be either [left-wing](/tag/left-wing) or [right-wing](/tag/right-wing). Most modern day movements are on the left side of the political spectrum, such as [Black Lives Matter](/politics/black-lives-matter)
 
 Social movements can take a variety of forms and can be motivated by a wide range of issues and causes. Some social movements seek to bring about progressive change and to address issues of injustice and inequality, while others seek to preserve traditional values and institutions.
 

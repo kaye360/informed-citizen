@@ -1,5 +1,6 @@
 ---
 import Header from "../components/Header.astro";
+import RelatedArticles from "../components/RelatedArticles.astro";
 import SocialShare from "../components/SocialShare.astro";
 const { date, author, tags, title, uri} = Astro.props
 ---
@@ -19,6 +20,8 @@ const { date, author, tags, title, uri} = Astro.props
 	}
 
 	<slot /> <!-- Article Content -->
+
+	<RelatedArticles tags={tags} />
 
 </article>
 

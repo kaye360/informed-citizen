@@ -1,0 +1,65 @@
+---
+import Card from "./Card.astro"
+
+const { tags } = Astro.props
+
+const articles = await Astro.glob('../articles/*.md')
+
+// filter out articles to only articls that contain some of the current article tags
+const relatedArticles = articles.filter( article => {
+  return article.frontmatter.tags.some( tag => tags.includes(tag))
+})
+
+// Shuffle related articles to produce 4 random results
+// Credit here: 
+// https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+const shuffledRelatedArticles = relatedArticles
+    .map(value => ({ value, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .map(({ value }) => value)
+    .slice(0,4)
+---
+
+
+
+{
+
+shuffledRelatedArticles.length !== 0 && 
+  <div class="related-articles">
+    <h2>Related Articles</h2>
+    
+    <div class="related-articles-grid">
+      {
+      shuffledRelatedArticles.map( article => {
+        return(
+          <Card
+          title={article.frontmatter.title}
+          content={article.frontmatter.excerpt}
+          link={article.frontmatter.uri}
+          />
+        )})
+      }
+    </div>
+  </div>
+}
+
+<style>
+
+h2 {
+  padding-top: 2rem;
+  border-top : 1px solid black;
+}
+
+.related-articles-grid {
+  display : grid;
+  gap : 1.3rem;
+  margin-bottom : 2rem;
+}
+
+@media screen and (min-width : 850px) {
+  .related-articles-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+</style>

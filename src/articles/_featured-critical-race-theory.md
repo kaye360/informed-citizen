@@ -8,7 +8,7 @@ tags :
   - academic-theory
   - left-wing
   - identity-politics
-metaTitle : Critical race theory (CRT) is an intellectual movement and approach to understanding various forms of oppression.
+metaTitle : Critical race theory (CRT) - academic movement explained
 metaDescription : All about Critical Race Theory - The intellectual movement addressing the ways in which race and racism intersect with other forms of oppression, such as class, gender, and sexuality.
 metaKeywords : critical race theory, racism, anti-racism, oppression, class, richard delgado, jean stefancic, crt
 ---

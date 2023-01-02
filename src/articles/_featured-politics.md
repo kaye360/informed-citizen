@@ -9,6 +9,9 @@ tags :
   - left-wing
   - right-wing
   - centrism
+metaTitle : What is politics and government?
+metaDescription : Politics is the study of power; Politcs and government is the process by which decisions are made within groups, organizations, or societies. 
+metaKeywords : politics, political, theory, political theory, ideology, government, political party
 ---
 
 ![Flags of many countries outside the United Nations buidling.](/assets/img/articles/politics.jpg)

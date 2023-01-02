@@ -8,6 +8,9 @@ tags :
   - right-wing
   - libertarianism
   - conservatism
+metaTitle : Libertarianism - the political ideology of individual liberty
+metaDescription : Libertarians believe that individuals have the right to be free from interference by the state, and that they should be able to live their lives as they see fit
+metaKeywords : libertarian, libertarianism, milton friedman, friedrich hayek, ayn rand, murray rothbard
 ---
 
 ![A Gadsden Flag, very popular among modern day right-wing Libertarians](/assets/img/articles/libertarianism.png)
