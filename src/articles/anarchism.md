@@ -7,7 +7,7 @@ author : admin
 tags : 
   -  left-wing
   - anarchism
-  - libertarian
+  - libertarianism
   - socialism
 ---
 
