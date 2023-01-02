@@ -41,7 +41,11 @@ nav ul {
 
 p {
   margin-block: 1.7rem;
-  line-height: 1.7rem;
+  line-height: 2rem;
+}
+
+blockquote {
+  line-height: 2rem;
 }
 
 button {

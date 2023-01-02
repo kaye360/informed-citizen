@@ -4,7 +4,7 @@ import SocialShare from "../components/SocialShare.astro";
 const { date, author, tags, title, uri} = Astro.props
 ---
 	
-<article class="mt3">
+<article class="article-wrapper mt3">
 
 	<Header
 		date={date}
@@ -23,6 +23,17 @@ const { date, author, tags, title, uri} = Astro.props
 </article>
 
 
+<style is:global>
+
+.article-wrapper :where(p, blockquote, img) {
+	max-width : 60ch;
+}
+
+.article-wrapper img {
+	width : 100%;
+	border-radius: 1rem;
+}
+</style>
 
 <style>
 
