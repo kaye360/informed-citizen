@@ -37,12 +37,17 @@ Socialist principles have been tried in many various flavours across the world w
 
 ## Prominent Socialists
 
-Antonio Gramsci: Gramsci was an Italian Marxist theorist and politician who is best known for his concept of cultural hegemony, which describes how dominant groups in society maintain their power through the widespread acceptance of their values and beliefs. Gramsci's work has been influential in the fields of sociology, political science, and cultural studies.
+### Antonio Gramsci
+Gramsci was an Italian Marxist theorist and politician who is best known for his concept of cultural hegemony, which describes how dominant groups in society maintain their power through the widespread acceptance of their values and beliefs. Gramsci's work has been influential in the fields of sociology, political science, and cultural studies.
 
-Rosa Luxemburg: Luxemburg a strong advocate of democracy and internationalism and played a leading role in the founding of the Communist Party of Germany. She was arrested and killed by the German government during the Spartacist uprising in 1919.
+### Rosa Luxemburg
+Luxemburg a strong advocate of democracy and internationalism and played a leading role in the founding of the Communist Party of Germany. She was arrested and killed by the German government during the Spartacist uprising in 1919.
 
-Karl Marx: Marx is perhaps the most well-known socialist thinker, and is credited with developing the theory of socialism that underlies many modern socialist movements. Marx believed that capitalism was inherently exploitative and that a socialist revolution was necessary to bring about a more just and equal society.
+### Karl Marx
+Marx is perhaps the most well-known socialist thinker, and is credited with developing the theory of socialism that underlies many modern socialist movements. Marx believed that capitalism was inherently exploitative and that a socialist revolution was necessary to bring about a more just and equal society.
 
-Noam Chomsky: Chomsky is an American linguist, philosopher, and political activist who has made significant contributions to the field of linguistics and has written extensively on issues of politics, power, and social justice. He is known for his criticism of US foreign policy and his advocacy of anarchism and libertarian socialism.
+### Noam Chomsky
+Chomsky is an American linguist, philosopher, and political activist who has made significant contributions to the field of linguistics and has written extensively on issues of politics, power, and social justice. He is known for his criticism of US foreign policy and his advocacy of anarchism and libertarian socialism.
 
-Friedrich Engels: Engels was a close collaborator of Karl Marx and was instrumental in the development of Marxist theory. He is best known for his work "The Condition of the Working Class in England," which provided a detailed account of the living and working conditions of the working class in England.
+### Friedrich Engels
+Engels was a close collaborator of Karl Marx and was instrumental in the development of Marxist theory. He is best known for his work "The Condition of the Working Class in England," which provided a detailed account of the living and working conditions of the working class in England.

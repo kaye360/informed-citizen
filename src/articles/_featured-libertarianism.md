@@ -47,12 +47,17 @@ Here are some prominent historical moments of the libertarian movement:
 
 ## Prominent Figures
 
-Milton Friedman: An economist and Nobel laureate, Friedman was a leading advocate of free market economics and a founder of the Chicago School of Economics.
+### Milton Friedman
+An economist and Nobel laureate, Friedman was a leading advocate of free market economics and a founder of the Chicago School of Economics.
 
-Friedrich Hayek: An economist and philosopher, Hayek is best known for his defense of classical liberalism and his critique of socialist and interventionist government policies.
+### Friedrich Hayek
+An economist and philosopher, Hayek is best known for his defense of classical liberalism and his critique of socialist and interventionist government policies.
 
-Ayn Rand: A philosopher and author, Rand is known for her advocacy of laissez-faire capitalism and individualism, as well as her opposition to collectivism and state intervention.
+### Ayn Rand
+A philosopher and author, Rand is known for her advocacy of laissez-faire capitalism and individualism, as well as her opposition to collectivism and state intervention.
 
-Murray Rothbard: An economist and philosopher, Rothbard was a leading advocate of anarchism and libertarianism and was a co-founder of the libertarian movement in the United States.
+### Murray Rothbard
+An economist and philosopher, Rothbard was a leading advocate of anarchism and libertarianism and was a co-founder of the libertarian movement in the United States.
 
-David Boaz: An author and commentator, Boaz is the executive vice president of the Cato Institute, a libertarian think tank, and has written extensively on libertarianism and free market economics.
+### David Boaz
+An author and commentator, Boaz is the executive vice president of the Cato Institute, a libertarian think tank, and has written extensively on libertarianism and free market economics.

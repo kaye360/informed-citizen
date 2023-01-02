@@ -47,12 +47,17 @@ The following are some key moments in the history of communism:
 
 ## Prominent communists
 
-Karl Marx: Marx is perhaps the most well-known communist thinker and is credited with developing the theory of communism that underlies many modern socialist movements.
+### Karl Marx
+Marx is perhaps the most well-known communist thinker and is credited with developing the theory of communism that underlies many modern socialist movements.
 
-Friedrich Engels: Engels was a close collaborator of Karl Marx and was instrumental in the development of Marxist theory.
+### Friedrich Engels
+Engels was a close collaborator of Karl Marx and was instrumental in the development of Marxist theory.
 
-Vladimir Lenin: Lenin was a Russian communist revolutionary who played a key role in the 1917 Russian Revolution and the subsequent establishment of the Soviet Union. He is known for his interpretation of Marxist theory, which emphasized the need for a vanguard party to lead the socialist revolution.
+### Vladimir Lenin
+Lenin was a Russian communist revolutionary who played a key role in the 1917 Russian Revolution and the subsequent establishment of the Soviet Union. He is known for his interpretation of Marxist theory, which emphasized the need for a vanguard party to lead the socialist revolution.
 
-Leon Trotsky: Trotsky was a Russian Marxist revolutionary and theorist who was a key figure in the Russian Revolution and the early Soviet Union. He is known for his contributions to Marxist theory, particularly his theory of permanent revolution, which argued that socialist revolutions must spread internationally in order to succeed.
+### Leon Trotsky
+Trotsky was a Russian Marxist revolutionary and theorist who was a key figure in the Russian Revolution and the early Soviet Union. He is known for his contributions to Marxist theory, particularly his theory of permanent revolution, which argued that socialist revolutions must spread internationally in order to succeed.
 
-Mao Zedong: Mao was the leader of the Chinese Communist Party and played a key role in the 1949 Chinese Revolution. He is known for his contributions to Marxist theory, particularly his concept of continuous revolution, and his leadership of the Chinese Revolution.
+### Mao Zedong
+Mao was the leader of the Chinese Communist Party and played a key role in the 1949 Chinese Revolution. He is known for his contributions to Marxist theory, particularly his concept of continuous revolution, and his leadership of the Chinese Revolution.

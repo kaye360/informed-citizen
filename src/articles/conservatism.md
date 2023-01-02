@@ -39,14 +39,20 @@ Now, in the late 20th century, conservatism underwent a significant shift with t
 
 ## Prominent Conservatives: Thinkers and leaders
 
-Edmund Burke: Burke was an Irish philosopher and politician who is considered the father of modern conservatism. He is known for his defense of tradition, authority, and social order, and his critique of the French Revolution.
+### Edmund Burke
+Burke was an Irish philosopher and politician who is considered the father of modern conservatism. He is known for his defense of tradition, authority, and social order, and his critique of the French Revolution.
 
-William F. Buckley Jr.: Buckley was an American writer and commentator who was a leading figure in the conservative movement in the United States in the second half of the 20th century. He is known for his advocacy of conservatism and his founding of the National Review, a conservative magazine.
+### William F. Buckley Jr.
+Buckley was an American writer and commentator who was a leading figure in the conservative movement in the United States in the second half of the 20th century. He is known for his advocacy of conservatism and his founding of the National Review, a conservative magazine.
 
-Margaret Thatcher: Thatcher was the Prime Minister of the United Kingdom from 1979 to 1990 and was a leading figure in the conservative movement. She is known for her advocacy of free markets, individual responsibility, and a limited role for the state.
+### Margaret Thatcher
+Thatcher was the Prime Minister of the United Kingdom from 1979 to 1990 and was a leading figure in the conservative movement. She is known for her advocacy of free markets, individual responsibility, and a limited role for the state.
 
-Ronald Reagan: Reagan was the President of the United States from 1981 to 1989 and was a prominent conservative leader. He is known for his advocacy of small government, free markets, and a strong national defense.
+### Ronald Reagan
+Reagan was the President of the United States from 1981 to 1989 and was a prominent conservative leader. He is known for his advocacy of small government, free markets, and a strong national defense.
 
-George W. Bush: Bush was the President of the United States from 2001 to 2009 and was a conservative leader. He is known for his strong support for a limited role for the government, free markets, and a strong national defense.
+### George W. Bush
+Bush was the President of the United States from 2001 to 2009 and was a conservative leader. He is known for his strong support for a limited role for the government, free markets, and a strong national defense.
 
-Donald Trump: Trump is an American businessman and politician who served as the President of the United States from 2017 to 2021. Trump was a controversial figure during his presidency, and his policies and actions were often divisive, even among his own party
+### Donald Trump
+Trump is an American businessman and politician who served as the President of the United States from 2017 to 2021. Trump was a controversial figure during his presidency, and his policies and actions were often divisive, even among his own party

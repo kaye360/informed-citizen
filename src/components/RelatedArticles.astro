@@ -17,7 +17,7 @@ const shuffledRelatedArticles = relatedArticles
     .map(value => ({ value, sort: Math.random() }))
     .sort((a, b) => a.sort - b.sort)
     .map(({ value }) => value)
-    .slice(0,4)
+    .slice(0,6)
 ---
 
 
@@ -34,7 +34,7 @@ shuffledRelatedArticles.length !== 0 &&
         return(
           <Card
           title={article.frontmatter.title}
-          content={article.frontmatter.excerpt}
+          content=''
           link={article.frontmatter.uri}
           />
         )})

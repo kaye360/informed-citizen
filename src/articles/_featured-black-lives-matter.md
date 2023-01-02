@@ -33,12 +33,17 @@ BLM advocates for the rights and dignity of black people and seeks to end racial
 
 ## Prominent figures within the BLM movement
 
-Patrisse Cullors: Co-founder of Black Lives Matter, Cullors is an artist, organizer, and freedom fighter who has worked to combat police violence and promote racial justice for more than 20 years.
+### Patrisse Cullors
+Co-founder of Black Lives Matter, Cullors is an artist, organizer, and freedom fighter who has worked to combat police violence and promote racial justice for more than 20 years.
 
-Alicia Garza: Co-founder of Black Lives Matter, Garza is an organizer, writer, and public speaker who has dedicated her career to advancing racial and social justice.
+### Alicia Garza
+Co-founder of Black Lives Matter, Garza is an organizer, writer, and public speaker who has dedicated her career to advancing racial and social justice.
 
-Opal Tometi: Co-founder of Black Lives Matter, Tometi is a human rights advocate and executive director of the Black Alliance for Just Immigration.
+### Opal Tometi
+Co-founder of Black Lives Matter, Tometi is a human rights advocate and executive director of the Black Alliance for Just Immigration.
 
-Deray McKesson: A civil rights activist and organizer, McKesson is known for his work in the Black Lives Matter movement and his efforts to reform the criminal justice system.
+### Deray McKesson
+A civil rights activist and organizer, McKesson is known for his work in the Black Lives Matter movement and his efforts to reform the criminal justice system.
 
-Brittany Packnett Cunningham: An educator, writer, and activist, Cunningham is a leader in the Black Lives Matter movement and has worked to promote social justice and racial equality.
+### Brittany Packnett Cunningham
+An educator, writer, and activist, Cunningham is a leader in the Black Lives Matter movement and has worked to promote social justice and racial equality.

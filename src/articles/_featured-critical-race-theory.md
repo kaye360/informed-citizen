@@ -31,12 +31,17 @@ Critical Race Theory emphasizes the importance of understanding the ways in whic
 
 ## Prominent Scholars of Critical Race Theory
 
-Kimberlé Crenshaw: A pioneering critical race theorist and civil rights advocate, Crenshaw is best known for her work on intersectionality and has played a key role in the development of critical race theory.
+### Kimberlé Crenshaw
+A pioneering critical race theorist and civil rights advocate, Crenshaw is best known for her work on intersectionality and has played a key role in the development of critical race theory.
 
-Richard Delgado: A law professor and leading critical race theorist, Delgado has written extensively on issues of race, racism, and social justice, and has helped to popularize critical race theory in legal academia.
+### Richard Delgado
+A law professor and leading critical race theorist, Delgado has written extensively on issues of race, racism, and social justice, and has helped to popularize critical race theory in legal academia.
 
-Angela Harris: A law professor and critical race theorist, Harris has made significant contributions to the field of critical race theory and has written extensively on issues of race, gender, and the law.
+### Angela Harris
+A law professor and critical race theorist, Harris has made significant contributions to the field of critical race theory and has written extensively on issues of race, gender, and the law.
 
-bell hooks: An author, activist, and critical race theorist, hooks has written extensively on issues of race, gender, and social justice, and has been a major influence on the development of critical race theory.
+### bell hooks
+An author, activist, and critical race theorist, hooks has written extensively on issues of race, gender, and social justice, and has been a major influence on the development of critical race theory.
 
-Gloria Ladson-Billings: An education scholar and critical race theorist, Ladson-Billings has made significant contributions to the field of critical race theory in education and has written extensively on issues of race and education.
+### Gloria Ladson-Billings
+An education scholar and critical race theorist, Ladson-Billings has made significant contributions to the field of critical race theory in education and has written extensively on issues of race and education.

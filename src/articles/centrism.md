@@ -32,12 +32,17 @@ Opponents of centrist politics argue that implementing a compromise of political
 
 ## Prominent Centrist Politicians
 
-Angela Merkel: Merkel is the current Chancellor of Germany and has been a leading figure in European politics for many years. She is known for her pragmatic and centrist approach to policymaking and has played a key role in shaping the direction of the European Union.
+### Angela Merkel
+Merkel is the current Chancellor of Germany and has been a leading figure in European politics for many years. She is known for her pragmatic and centrist approach to policymaking and has played a key role in shaping the direction of the European Union.
 
-Emmanuel Macron: Macron is the current President of France and has positioned himself as a centrist politician, advocating for a mix of pro-business and socially progressive policies.
+### Emmanuel Macron
+Macron is the current President of France and has positioned himself as a centrist politician, advocating for a mix of pro-business and socially progressive policies.
 
-Tony Blair: Blair was the Prime Minister of the United Kingdom from 1997 to 2007 and was known for his centrist policies, including a focus on market-based solutions and a commitment to social justice.
+### Tony Blair
+Blair was the Prime Minister of the United Kingdom from 1997 to 2007 and was known for his centrist policies, including a focus on market-based solutions and a commitment to social justice.
 
-Bill Clinton: Clinton was the President of the United States from 1993 to 2001 and was known for his centrist policies, including a focus on fiscal discipline and a commitment to social programs.
+### Bill Clinton
+Clinton was the President of the United States from 1993 to 2001 and was known for his centrist policies, including a focus on fiscal discipline and a commitment to social programs.
 
-John Major: Major was the Prime Minister of the United Kingdom from 1990 to 1997 and was known for his centrist approach to policy, including a focus on pragmatic solutions and a commitment to social justice.
+### John Major
+Major was the Prime Minister of the United Kingdom from 1990 to 1997 and was known for his centrist approach to policy, including a focus on pragmatic solutions and a commitment to social justice.
