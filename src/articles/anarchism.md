@@ -8,6 +8,7 @@ tags :
   - left-wing
   - anarchism
   - libertarianism
+  - libertarian-socialism
   - socialism
   - marxism
   - labour-movement

@@ -51,3 +51,6 @@ Chomsky is an American linguist, philosopher, and political activist who has mad
 
 ### Friedrich Engels
 Engels was a close collaborator of Karl Marx and was instrumental in the development of Marxist theory. He is best known for his work "The Condition of the Working Class in England," which provided a detailed account of the living and working conditions of the working class in England.
+
+### Malala Yousafzai
+Yousafzai is a Pakistani education activist who is known for her advocacy for the rights of girls and women, particularly in relation to education. She is a vocal advocate for gender equality and human rights and has received numerous awards for her work, including the Nobel Peace Prize.
