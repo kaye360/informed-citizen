@@ -21,3 +21,4 @@ collections:
       - {label: "Meta Title", name: "metaTitle", widget: "string"}
       - {label: "Meta Desc", name: "metaDescription", widget: "string"}
       - {label: "Meta Keywords", name: "metaKeywords", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
