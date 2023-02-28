@@ -54,5 +54,3 @@ A civil rights activist and organizer, McKesson is known for his work in the Bla
 ### Brittany Packnett Cunningham
 
 An educator, writer, and activist, Cunningham is a leader in the Black Lives Matter movement and has worked to promote social justice and racial equality.
-
-T﻿his is a test edit
