@@ -22,3 +22,7 @@ collections:
       - {label: "Meta Desc", name: "metaDescription", widget: "string"}
       - {label: "Meta Keywords", name: "metaKeywords", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name : "pages"
+    label: "Pages"
+    folder: "src/pages"
+    create: true
