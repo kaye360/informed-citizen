@@ -1,19 +1,21 @@
 ---
-title : Black Lives Matter movement
-uri : black-lives-matter-movement
-excerpt : Black Lives Matter (BLM) is a social and political movement that seeks to address issues of systemic racism and discrimination against black people.
+title: Black Lives Matter movement
+uri: black-lives-matter-movement
+excerpt: Black Lives Matter (BLM) is a social and political movement that seeks
+  to address issues of systemic racism and discrimination against black people.
 date: 2022-12-26
-author : admin
-tags : 
+author: admin
+tags:
   - social-movement
   - anti-racism
   - defund-the-police
   - identity-politics
-metaTitle : Black Lives Matter movement - movement, ideology, and history
-metaDescription : Black Lives Matter is a movement that began in the United States to combat systemic racism and police brutality against black people.
-metaKeywords : black lives matter, blm, defund the police, george floyd, patrisse cullors, systemic racism, trayvon martin
+metaTitle: Black Lives Matter movement - movement, ideology, and history
+metaDescription: Black Lives Matter is a movement that began in the United
+  States to combat systemic racism and police brutality against black people.
+metaKeywords: black lives matter, blm, defund the police, george floyd, patrisse
+  cullors, systemic racism, trayvon martin
 ---
-
 ![One many Black Lives Matter protests that took place all over the world.](/assets/img/articles/black-lives-matter.jpg)
 Image credit: James Eades
 
@@ -34,16 +36,23 @@ BLM advocates for the rights and dignity of black people and seeks to end racial
 ## Prominent figures within the BLM movement
 
 ### Patrisse Cullors
+
 Co-founder of Black Lives Matter, Cullors is an artist, organizer, and freedom fighter who has worked to combat police violence and promote racial justice for more than 20 years.
 
 ### Alicia Garza
+
 Co-founder of Black Lives Matter, Garza is an organizer, writer, and public speaker who has dedicated her career to advancing racial and social justice.
 
 ### Opal Tometi
+
 Co-founder of Black Lives Matter, Tometi is a human rights advocate and executive director of the Black Alliance for Just Immigration.
 
 ### Deray McKesson
+
 A civil rights activist and organizer, McKesson is known for his work in the Black Lives Matter movement and his efforts to reform the criminal justice system.
 
 ### Brittany Packnett Cunningham
+
 An educator, writer, and activist, Cunningham is a leader in the Black Lives Matter movement and has worked to promote social justice and racial equality.
+
+T﻿his is a test edit
